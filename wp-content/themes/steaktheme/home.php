@@ -65,7 +65,7 @@ get_header(); ?>
         <div
             class="flex flex-cols-2 justify-center gap-[5rem] md:grid md:grid-cols-1 md:gap-[1rem] mx-[5rem] lg:mx-[2rem] pb-[10rem] md:pb-[5rem] ">
             <div>
-                <div class="w-[36rem] h-[21rem] md:w-[18rem] md:h-[15rem] bg-gris  rounded-lg mb-16 md:mb-[1rem]">
+                <div class="w-[36rem] h-[21rem] lg:w-[20rem] lg:h-[20rem] md:w-[18rem] md:h-[15rem] bg-gris  rounded-lg mb-16 md:mb-[1rem]">
                 </div>
                 <div class="md:w-[18rem] md:h-[24rem] w-0 h-0 bg-gris rounded-lg md:mb-[2rem]">
                 </div>
@@ -74,20 +74,20 @@ get_header(); ?>
                 <p class="text-gris text-[4rem] font-Paytone lg:text-[3rem] sm:text-[2rem] z-40">Pictogrammes</p>
 
             </div>
-            <div class="w-[36rem] h-[50rem] md:w-0 md:h-0 bg-gris rounded-lg mb-12">
+            <div class="w-[36rem] h-[50rem] lg:w-[20rem] lg:h-[30rem] md:w-0 md:h-0 bg-gris rounded-lg mb-12">
             </div>
 
         </div>
 
         <div class="flex flex-cols-2 justify-center gap-[5rem] md:grid md:grid-cols-1 md:gap-[1rem] mx-[5rem] lg:mx-[2rem] pb-12 sm:pb-[5rem] ">
             <div>
-                <div class="w-[36rem] h-[19rem] md:w-[18rem] md:h-[15rem] bg-gris  rounded-lg mb-16 md:mb-[1rem]">
+                <div class="w-[30rem] h-[20rem] lg:w-[20rem] lg:h-[20rem] md:w-[18rem] md:h-[15rem] bg-gris  rounded-lg mb-16 md:mb-[1rem]">
                 </div>
-                <div class="w-[36rem] h-[19rem] md:w-[18rem] md:h-[15rem] bg-gris  rounded-lg mb-16 md:mb-[0]">
+                <div class="w-[30rem] h-[20rem] lg:w-[20rem] lg:h-[20rem] md:w-[18rem] md:h-[15rem] bg-gris  rounded-lg mb-16 md:mb-[0]">
                 </div>
             </div>
             <div>
-                <div class="w-[36rem] h-[27rem] md:w-0 md:h-0 bg-gris  rounded-lg mb-4">
+                <div class="w-[30rem] h-[23rem] lg:w-[20rem] lg:h-[20rem] md:w-0 md:h-0 bg-gris rounded-lg mb-6">
                 </div>
                 <p class="text-gris text-[4rem] font-Paytone lg:text-[3rem] sm:text-[2rem] z-40">Chartes </p>
                 <p class="text-gris text-[4rem] font-Paytone lg:text-[3rem] sm:text-[2rem] z-40">Graphiques</p>
@@ -101,7 +101,7 @@ get_header(); ?>
         echo wp_get_attachment_url(28); ?>" alt="double arrow" />
     </div>
 
-    <div class="flex flex-cols-3 justify-center gap-[5rem] md:gap-[2rem] mx-[3rem]">
+    <div class="flex flex-cols-3 justify-center gap-[5rem] md:gap-[1rem] mx-[3rem]">
         <div class="place-items-center w-[25rem] md:w-[20rem]">
             <p class="text-gris font-Paytone text-2xl md:text-[28px]">Je suis Artiste,</p>
             <p class="text-gris font-Paytone text-[26px] md:text-[20px]">pendant mon temps libre. Je dessine sur Krita
