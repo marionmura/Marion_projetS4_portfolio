@@ -1,0 +1,31 @@
+/*CIRCLES*/
+.cercle-purple{
+    position: absolute;
+    width:520px;
+    top: 50px; /* Specify the desired top position */
+    left: -100px; /* Specify the desired left position */
+  }
+  
+  .cercle-orange{
+    position: absolute;
+    width:250px;
+    top: 320px; /* Specify the desired top position */
+    left: 240px; /* Specify the desired left position */
+  }
+  
+  .cercle-vert{
+    position: absolute;
+    width:240px;
+    top: 0px; /* Specify the desired top position */
+    left: 180px; /* Specify the desired left position */
+    z-index:0;
+  }
+  
+  .cercle-rouge{
+    position: absolute;
+    width:300px;
+    top: 100px; /* Specify the desired top position */
+    z-index:0;
+  }
+
+  
