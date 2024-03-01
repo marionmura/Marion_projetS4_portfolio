@@ -1,0 +1,30 @@
+/*FOOTER*/ 
+footer {
+    background-color: #171C30;
+    color:white;
+    margin:0;
+    padding:0;
+    bottom:0;
+    width: 100%;
+    /* position: fixed;  rester en bas de page peite page ok mais passe pas dessus contenu sur grandes pages pas ok */
+
+  }
+
+  footer nav li {
+    padding: 5px 0 ;
+  }
+  footer a, footer li{
+    color:white;
+    text-decoration: none;
+    list-style: none;
+  }
+
+  .section-nuit{
+    background-color:#171C30;
+    font-family: 'Paytone One', sans-serif;
+    font-size: 25px;
+    color: white
+  }
+  .section-nuit p {
+    margin:0;
+  }

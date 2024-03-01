@@ -1,0 +1,28 @@
+ 
+/*SEARCHBAR STYLE*/
+.side{
+    background-color: #7e5bb8;
+    padding:0px
+ }
+ .loop{
+    background-color: #e7cdff ;
+    padding:15px;
+ }
+
+ input[type="text"] {
+    background-color: #444D6D;  
+    border : none;
+    color:white;
+    font-size:medium;
+     padding: 5px;
+     width:100px;
+ }
+
+ input[type="text"]:focus {
+   outline:none;
+ }
+
+ input[type="text"]::placeholder{
+   color:white;
+ }
+
