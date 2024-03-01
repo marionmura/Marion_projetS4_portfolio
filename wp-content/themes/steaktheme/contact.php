@@ -29,18 +29,18 @@ get_header();
         
         <div class='md:px-3 lg:px-14 px-32 rounded-lg  text-[25px]'>
             <form class="" action="<?php echo esc_url( admin_url('admin-post.php') ); ?>" method="post">
-                <div class="font-Paytone my-4"><label class="mb-2" for="mail">Email</label><input class="h-12" name="mail" placeholder="Entrez votre Email" type="email"></div>
+                <div class="font-Paytone my-4"><input class="h-12" name="mail" placeholder="Email" type="email"></div>
                 <div class="grid grid-cols-2 gap-5 my-4">
-                    <div><input class="font-Paytone h-12" name="lastname" placeholder="Nom" type="text"></div>
+                    <div class="bg-blanc-ivoir"><input class="font-Paytone h-12 bg-blanc-ivoir" name="lastname" placeholder="Nom" type="text"></div>
                     <div><input class="h-12 font-Paytone" name="surname" placeholder="Prénom" type="text"></div>
                 </div>
                 
                 <div class="my-4"><label class="font-Paytone mb-2" for="object">Sujet du message</label><input class="h-12" name="object" placeholder="Ici l'objet de votre message" type="text"></div>
-                <div class="font-Paytone my-4"><label class="mb-2" for="content">Message</label><textarea name="content" id="" placeholder="Pourquoi souhaitez-vous me contacter ?" rows="6"></textarea></div>
+                <div class="font-Paytone my-4"><label class="mb-2" for="content">Message</label><textarea name="content" id="" placeholder="Pourquoi souhaitez-vous me contacter ?" rows="3"></textarea></div>
                 <div class='flex font-body text-[16px] my-4'><input class='self-start mr-1' type="checkbox" name="MentionLegal" value="" required><label for="MentionLegal">En envoyant ce formulaire, j'accepte que mes informations saisies soient utilisées pour une prise de contact avec vous. Il n’y a pas de transfert de ces données personnelles à des tiers.</label></div>
                 <input type="hidden" name="action" value="process_contact_form">
                 <?php wp_nonce_field( 'process_contact_form', 'contact_form_nonce' ); ?>
-                <input class="!bg-orange hover:!bg-[#B85227] !w-full !text-blanc !border-none !rounded-lg !font-semibold mb-7" type="submit" value="ENVOYER" >
+                <input class="!bg-violet hover:!bg-[#FFACAC] !px-[1rem] !text-blanc hover:!text-gris !font-Paytone !border-none !rounded-xl mb-7" type="submit" value="ENVOYER" >
             </form>
         </div>
     </div>

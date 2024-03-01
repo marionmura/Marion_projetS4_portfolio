@@ -38,3 +38,6 @@ header a{
     text-decoration: none;
  }
 
+ input[type="text"] {
+  background-color: #000000;
+ }

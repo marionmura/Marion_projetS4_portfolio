@@ -7,6 +7,7 @@ module.exports = {
       "noir": "#000000",
       "blanc-ivoir": "#F6F2EA",
       "gris": "#171C30",
+      "violet":"#9789F8",
       "transparent": "transparent",
     },
     fontFamily: {
