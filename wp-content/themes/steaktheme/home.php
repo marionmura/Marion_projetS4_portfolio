@@ -101,8 +101,10 @@ get_header(); ?>
         echo wp_get_attachment_url(28); ?>" alt="double arrow" />
     </div>
 
-    <div class="flex flex-cols-3 justify-center gap-[5rem] md:gap-[1rem] mx-[3rem]">
-        <div class="place-items-center w-[25rem] md:w-[20rem]">
+    <div class="flex flex-cols-3 md:flex md:flex-row-2 md:flex-wrap sm:grid sm:grid-cols-1 justify-items-center gap-[5rem] md:gap-[1rem] mx-4 sm:mb-0">
+        <div class="w-[18rem] h-[35rem] md:w-[10rem] md:h-[20rem] sm:w-[15rem] sm:h-[15rem] bg-gris rounded-lg lg:mb-16 sm:mb-0"></div>
+        <div class="w-[25rem] h-[35rem] md:w-[12rem] md:h-[20rem] sm:w-[15rem] sm:h-[15rem] bg-gris  rounded-lg lg:mb-16 sm:mb-0"></div>
+        <div class="place-items-center w-[23rem] md:w-[20rem]">
             <p class="text-gris font-Paytone text-2xl md:text-[28px]">Je suis Artiste,</p>
             <p class="text-gris font-Paytone text-[26px] md:text-[20px]">pendant mon temps libre. Je dessine sur Krita
                 et tablette graphique.</p>
@@ -114,8 +116,7 @@ get_header(); ?>
                 echo wp_get_attachment_url(28); ?>" alt="double arrow" />
             </div>
         </div>
-        <div class="w-[18rem] h-[35rem] md:w-0 md:h-0 bg-gris rounded-lg mb-16"></div>
-        <div class="w-[25rem] h-[35rem] md:w-0 md:h-0 bg-gris  rounded-lg mb-16"></div>
+        
     </div>
 
 
