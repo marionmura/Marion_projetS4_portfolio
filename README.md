@@ -5,5 +5,5 @@ Portfolio
 Thème wordpress pour modification
 
 mettre dans MAMP > HTDOCS > PROJETS4 >Marion_ProjetS4_Portfolio
-cd .\wp-content\themes\steaktheme\steaktheme\
+cd .\wp-content\themes\steaktheme\
 npm run starttailwind

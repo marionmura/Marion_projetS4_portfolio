@@ -50,10 +50,11 @@ get_header(); ?>
 
 
     <div class=" pt-[8rem]">
-        <div class="flex flex-cols-2 justify-center gap-[5rem] lg:grid lg:grid-cols-1 mx-[5rem] lg:mx-[2rem] pb-[10rem]">
-            <div class="w-[36rem] h-[25rem] md:w-0 md:h-0 bg-gris  rounded-lg">
-            </div>
+        <div
+            class="flex flex-cols-2 justify-center gap-[5rem] md:grid md:grid-cols-1 md:gap-[1rem] mx-[5rem] lg:mx-[2rem] pb-[10rem] md:pb-[5rem]">
+            <div class="w-[36rem] h-[25rem] md:w-[18rem] md:h-[15rem] bg-gris  rounded-lg"> </div>
             <div>
+                <div class="md:w-[18rem] md:h-[15rem] lg:w-0 lg:h-0 bg-gris rounded-lg md:mb-[2rem]"></div>
                 <p class="text-gris text-[4rem] font-Paytone lg:text-[3rem] sm:text-[2rem] z-40">Animation & </p>
                 <p class="text-gris text-[4rem] font-Paytone lg:text-[3rem] sm:text-[2rem] z-40"> Motion Design</p>
                 <div class="w-[36rem] h-[21rem] md:w-0 md:h-0 bg-gris my-12 rounded-lg">
@@ -61,9 +62,12 @@ get_header(); ?>
             </div>
         </div>
 
-        <div class="flex flex-cols-2 justify-center gap-[5rem] lg:grid lg:grid-cols-1 mx-[5rem] lg:mx-[2rem] pb-[10rem] ">
+        <div
+            class="flex flex-cols-2 justify-center gap-[5rem] md:grid md:grid-cols-1 md:gap-[1rem] mx-[5rem] lg:mx-[2rem] pb-[10rem] md:pb-[5rem] ">
             <div>
-                <div class="w-[36rem] h-[21rem] md:w-0 md:h-0 bg-gris  rounded-lg mb-16">
+                <div class="w-[36rem] h-[21rem] md:w-[18rem] md:h-[15rem] bg-gris  rounded-lg mb-16 md:mb-[1rem]">
+                </div>
+                <div class="md:w-[18rem] md:h-[24rem] w-0 h-0 bg-gris rounded-lg md:mb-[2rem]">
                 </div>
                 <p class="text-gris text-[4rem] font-Paytone lg:text-[3rem] sm:text-[2rem] z-40">Affiches, </p>
                 <p class="text-gris text-[4rem] font-Paytone lg:text-[3rem] sm:text-[2rem] z-40">Avatars & </p>
@@ -75,11 +79,11 @@ get_header(); ?>
 
         </div>
 
-        <div class="flex flex-cols-2 justify-center gap-[5rem] lg:grid lg:grid-cols-1 mx-[5rem] lg:mx-[2rem] py-12 ">
+        <div class="flex flex-cols-2 justify-center gap-[5rem] md:grid md:grid-cols-1 md:gap-[1rem] mx-[5rem] lg:mx-[2rem] pb-12 sm:pb-[5rem] ">
             <div>
-                <div class="w-[36rem] h-[19rem] md:w-0 md:h-0 bg-gris  rounded-lg mb-16">
+                <div class="w-[36rem] h-[19rem] md:w-[18rem] md:h-[15rem] bg-gris  rounded-lg mb-16 md:mb-[1rem]">
                 </div>
-                <div class="w-[36rem] h-[19rem] md:w-0 md:h-0 bg-gris  rounded-lg mb-16">
+                <div class="w-[36rem] h-[19rem] md:w-[18rem] md:h-[15rem] bg-gris  rounded-lg mb-16 md:mb-[0]">
                 </div>
             </div>
             <div>
@@ -100,8 +104,10 @@ get_header(); ?>
     <div class="flex flex-cols-3 justify-center gap-[5rem] md:gap-[2rem] mx-[3rem]">
         <div class="place-items-center w-[25rem] md:w-[20rem]">
             <p class="text-gris font-Paytone text-2xl md:text-[28px]">Je suis Artiste,</p>
-            <p class="text-gris font-Paytone text-[26px] md:text-[20px]">pendant mon temps libre. Je dessine sur Krita et tablette graphique.</p>
-            <p class="text-gris font-Paytone text-[26px] md:text-[20px]">J’ai réalisé plusieurs projets comme une BD ou de l’animation 2D.</p>
+            <p class="text-gris font-Paytone text-[26px] md:text-[20px]">pendant mon temps libre. Je dessine sur Krita
+                et tablette graphique.</p>
+            <p class="text-gris font-Paytone text-[26px] md:text-[20px]">J’ai réalisé plusieurs projets comme une BD ou
+                de l’animation 2D.</p>
             <div class=" flex justify-center mt-[3rem] gap-5">
                 <p class="text-[25px] font-Paytone text-gris md:text-[20px]">MES PROJETS</p>
                 <img class="rotate-[-90deg] w-[30px]" src="<?php
@@ -114,7 +120,7 @@ get_header(); ?>
 
 
 
-        <!-- 
+    <!-- 
     <div class="presentation-grid-2">
         <div>
             <h1>Moi c’est Marion</h1>
@@ -133,6 +139,6 @@ get_header(); ?>
         </div>
     </div> -->
 
-        <?php
-        get_footer();
-        ?>
+    <?php
+    get_footer();
+    ?>
