@@ -116,29 +116,10 @@ get_header(); ?>
                 echo wp_get_attachment_url(28); ?>" alt="double arrow" />
             </div>
         </div>
-        
     </div>
 
+    <div class="my-10"></div>
 
-
-    <!-- 
-    <div class="presentation-grid-2">
-        <div>
-            <h1>Moi c’est Marion</h1>
-            <p>J’ai 21 ans et je suis étudiante au BUT MMI à Montbéliard.</p>
-            <p>Je suis en 2ème année et je travaille avec la suite Adobe (InDesign, After Effect, Illustrator et Photoshop).</p>
-            <p>J’ai déjà eu l’occasion de réaliser des sites web avec Wordpress ou en HTML/ CSS ou en Vue JS et pocketbase pour la gestion des pages dynamiques.</p>
-            <p>Et pendant mon temps libre j’adore dessiner, vous pouvez me retrouver sur Instagram sous steakosaure.png.</p>
-        </div>
-        <div>
-            <img class="photodemoi" src="<?php
-            echo wp_get_attachment_url(15); ?>" alt="banniere" />
-            <img class="cercles" src="<?php
-            echo wp_get_attachment_url(18); ?>" alt="banniere" />
-            <img class="cercles" src="<?php
-            echo wp_get_attachment_url(19); ?>" alt="banniere" />
-        </div>
-    </div> -->
 
     <?php
     get_footer();
