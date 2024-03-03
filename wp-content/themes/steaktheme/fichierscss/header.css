@@ -38,6 +38,7 @@ header a{
     text-decoration: none;
  }
 
- input[type="text"] {
-  background-color: #000000;
- }
+
+p, h1, h2, h3, h4, h5, h6 {
+    color: #171C30;
+}

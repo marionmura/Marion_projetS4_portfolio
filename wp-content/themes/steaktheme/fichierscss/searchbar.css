@@ -9,13 +9,13 @@
     padding:15px;
  }
 
- input[type="text"] {
-    background-color: #444D6D;  
-    border : none;
-    color:white;
+ input[type="text"], textarea, input[type="email"] {
+    background-color: #F6F2EA;  
+    border : solid;
+    color:#171C30;
     font-size:medium;
-     padding: 5px;
-     width:100px;
+    padding: 5px;
+    width:100px;
  }
 
  input[type="text"]:focus {
