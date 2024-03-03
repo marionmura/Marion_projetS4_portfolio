@@ -29,42 +29,45 @@ get_header();
 
         <div class='md:px-3 lg:px-14 px-32 rounded-lg  text-[25px]'>
             <form class="" action="<?php echo esc_url(admin_url('admin-post.php')); ?>" method="post">
-                <div class="font-Paytone my-4 bg-blanc-ivoir">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                    <div class="grid grid-cols-2 gap-5 my-4">
-                        <div class="bg-blanc-ivoir">
-                            <label for="nom">Nom</label>
-                            <input type="text" id="nom" name="nom" required>
-                            <div class="bg-blanc-ivoir">
-                                <label for="prenom">Prénom</label>
-                                <input type="text" id="prenom" name="prenom" required>
-                            </div>
-                        </div>
 
-                        <div class="my-4">
-                            <label class="font-Paytone mb-2" for="object">Sujet du message</label>
-                            <input class="h-12" name="object" placeholder="Ici l'objet de votre message" type="text">
+                <div class="font-Paytone my-4 bg-blanc-ivoir">
+                    <div class="grid grid-rows-2">
+                        <!-- <label for="email">Email</label> -->
+                        <input type="email" id="email" placeholder="Email" name="email" required>
+                    </div>
+                    <div class="grid grid-cols-2 gap-5 my-4">
+                        <div class="grid grid-rows-2">
+                            <!-- <label for="nom">Nom</label> -->
+                            <input type="text" id="nom" name="nom" placeholder="Nom" required>
                         </div>
-                        <div class="font-Paytone my-4">
-                            <label class="mb-2" for="message">Message</label>
-                            <textarea
-                                name="message" id="message" placeholder="Pourquoi souhaitez-vous me contacter ?"
-                                rows="3"></textarea>
-                            </div>
-                        <div class='flex font-body text-[16px] my-4'><input class='self-start mr-1' type="checkbox"
-                                name="MentionLegal" value="" required><label for="MentionLegal">En envoyant ce
-                                formulaire, j'accepte que mes informations saisies soient utilisées pour une prise de
-                                contact avec vous. Il n’y a pas de transfert de ces données personnelles à des
-                                tiers.</label></div>
-                        <input type="hidden" name="action" value="process_contact_form">
-                        <?php wp_nonce_field('process_contact_form', 'contact_form_nonce'); ?>
+                        <div class="grid grid-rows-2">
+                            <!-- <label for=" prenom">Prénom</label> -->
+                            <input type="text" id="prenom" name="prenom" placeholder="Prénom" required>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-rows-2 my-4 ">
+                        <label class="font-Paytone mb-2" for="object">Sujet du message</label>
+                        <input class="h-12" name="object" placeholder="Ici l'objet de votre message" type="text">
+                    </div>
+                    <div class="grid grid-rows-2 ">
+                        <label class="" for="message">Message</label>
+                        <input name="message" id="message" placeholder="Pourquoi souhaitez-vous me contacter ?"
+                            ></input>
+                    </div>
+                    <div class=' font-body text-[16px] my-4'><input class='self-start mr-1' type="checkbox"
+                            name="MentionLegal" value="" required><label for="MentionLegal">En envoyant ce
+                            formulaire, j'accepte que mes informations saisies soient utilisées pour une prise de
+                            contact avec vous. Il n’y a pas de transfert de ces données personnelles à des
+                            tiers.</label></div>
+                    <input type="hidden" name="action" value="process_contact_form">
+                    <?php wp_nonce_field('process_contact_form', 'contact_form_nonce'); ?>
+                    <div class="flex justify-center">
                         <input
                             class="!bg-violet hover:!bg-[#FFACAC] !px-[1rem] !text-blanc hover:!text-gris !font-Paytone !border-none !rounded-xl mb-7"
                             type="submit" value="ENVOYER">
+                    </div>
             </form>
         </div>
     </div>
 </div>
-
-<?php get_footer(); ?>

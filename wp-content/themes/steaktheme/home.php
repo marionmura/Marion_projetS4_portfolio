@@ -65,7 +65,8 @@ get_header(); ?>
         <div
             class="flex flex-cols-2 justify-center gap-[5rem] md:grid md:grid-cols-1 md:gap-[1rem] mx-[5rem] lg:mx-[2rem] pb-[10rem] md:pb-[5rem] ">
             <div>
-                <div class="w-[36rem] h-[21rem] lg:w-[20rem] lg:h-[20rem] md:w-[18rem] md:h-[15rem] bg-gris  rounded-lg mb-16 md:mb-[1rem]">
+                <div
+                    class="w-[36rem] h-[21rem] lg:w-[20rem] lg:h-[20rem] md:w-[18rem] md:h-[15rem] bg-gris  rounded-lg mb-16 md:mb-[1rem]">
                 </div>
                 <div class="md:w-[18rem] md:h-[24rem] w-0 h-0 bg-gris rounded-lg md:mb-[2rem]">
                 </div>
@@ -79,11 +80,14 @@ get_header(); ?>
 
         </div>
 
-        <div class="flex flex-cols-2 justify-center gap-[5rem] md:grid md:grid-cols-1 md:gap-[1rem] mx-[5rem] lg:mx-[2rem] pb-12 sm:pb-[5rem] ">
+        <div
+            class="flex flex-cols-2 justify-center gap-[5rem] md:grid md:grid-cols-1 md:gap-[1rem] mx-[5rem] lg:mx-[2rem] pb-12 sm:pb-[5rem] ">
             <div>
-                <div class="w-[30rem] h-[20rem] lg:w-[20rem] lg:h-[20rem] md:w-[18rem] md:h-[15rem] bg-gris  rounded-lg mb-16 md:mb-[1rem]">
+                <div
+                    class="w-[30rem] h-[20rem] lg:w-[20rem] lg:h-[20rem] md:w-[18rem] md:h-[15rem] bg-gris  rounded-lg mb-16 md:mb-[1rem]">
                 </div>
-                <div class="w-[30rem] h-[20rem] lg:w-[20rem] lg:h-[20rem] md:w-[18rem] md:h-[15rem] bg-gris  rounded-lg mb-16 md:mb-[0]">
+                <div
+                    class="w-[30rem] h-[20rem] lg:w-[20rem] lg:h-[20rem] md:w-[18rem] md:h-[15rem] bg-gris  rounded-lg mb-16 md:mb-[0]">
                 </div>
             </div>
             <div>
@@ -101,9 +105,14 @@ get_header(); ?>
         echo wp_get_attachment_url(28); ?>" alt="double arrow" />
     </div>
 
-    <div class="flex flex-cols-3 md:flex md:flex-row-2 md:flex-wrap sm:grid sm:grid-cols-1 justify-items-center gap-[5rem] md:gap-[1rem] mx-4 sm:mb-0">
-        <div class="w-[18rem] h-[35rem] md:w-[10rem] md:h-[20rem] sm:w-[15rem] sm:h-[15rem] bg-gris rounded-lg lg:mb-16 sm:mb-0"></div>
-        <div class="w-[25rem] h-[35rem] md:w-[12rem] md:h-[20rem] sm:w-[15rem] sm:h-[15rem] bg-gris  rounded-lg lg:mb-16 sm:mb-0"></div>
+    <div
+        class="flex flex-cols-3 md:flex md:flex-row-2 md:flex-wrap sm:grid sm:grid-cols-1 justify-items-center gap-[5rem] md:gap-[1rem] mx-4 sm:mb-0">
+        <div
+            class="w-[18rem] h-[35rem] md:w-[10rem] md:h-[20rem] sm:w-[15rem] sm:h-[15rem] bg-gris rounded-lg lg:mb-16 sm:mb-0">
+        </div>
+        <div
+            class="w-[25rem] h-[35rem] md:w-[12rem] md:h-[20rem] sm:w-[15rem] sm:h-[15rem] bg-gris  rounded-lg lg:mb-16 sm:mb-0">
+        </div>
         <div class="place-items-center w-[23rem] md:w-[20rem]">
             <p class="text-gris font-Paytone text-2xl md:text-[28px]">Je suis Artiste,</p>
             <p class="text-gris font-Paytone text-[26px] md:text-[20px]">pendant mon temps libre. Je dessine sur Krita
@@ -120,7 +129,8 @@ get_header(); ?>
 
     <div class="my-10"></div>
 
+</div>
 
-    <?php
-    get_footer();
-    ?>
+<?php
+get_footer();
+?>
