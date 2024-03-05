@@ -34,28 +34,32 @@ get_header();
                     <div class="grid grid-rows-2">
                         <!-- <label for="email">Email</label> -->
                         <input type="email" id="email" placeholder="Email" name="email" required>
+                        <span class="w-full h-[3px] bg-gris"></span>
                     </div>
-                    <div class="grid grid-cols-2 gap-5 my-4">
+                    <div class="grid grid-cols-2 gap-10 my-4">
                         <div class="grid grid-rows-2">
                             <!-- <label for="nom">Nom</label> -->
                             <input type="text" id="nom" name="nom" placeholder="Nom" required>
+                            <span class="w-full h-[3px] bg-gris"></span>
                         </div>
                         <div class="grid grid-rows-2">
                             <!-- <label for=" prenom">Prénom</label> -->
                             <input type="text" id="prenom" name="prenom" placeholder="Prénom" required>
+                            <span class="w-full h-[3px] bg-gris"></span>
                         </div>
                     </div>
 
-                    <div class="grid grid-rows-2 my-4 ">
+                    <div class="grid grid-rows-2 pt-20 ">
                         <label class="font-Paytone mb-2" for="object">Sujet du message</label>
-                        <input class="h-12" name="object" placeholder="Ici l'objet de votre message" type="text">
+                        <input class="text-[18px] bg-blanc-ivoir" name="object" placeholder="Ici l'objet de votre message">
+                        <span class="w-full h-[3px] bg-gris"></span>
                     </div>
-                    <div class="grid grid-rows-2 ">
+                    <div class="grid grid-rows-2 py-20 ">
                         <label class="" for="message">Message</label>
-                        <input name="message" id="message" placeholder="Pourquoi souhaitez-vous me contacter ?"
-                            ></input>
+                        <input name="message" id="message" class="text-[18px] bg-blanc-ivoir" placeholder="Pourquoi souhaitez-vous me contacter ?"></input>
+                        <span class="w-full h-[3px] bg-gris"></span>
                     </div>
-                    <div class=' font-body text-[16px] my-4'><input class='self-start mr-1' type="checkbox"
+                    <div class=' font-body text-[16px] mt-8'><input class='self-start mr-1' type="checkbox"
                             name="MentionLegal" value="" required><label for="MentionLegal">En envoyant ce
                             formulaire, j'accepte que mes informations saisies soient utilisées pour une prise de
                             contact avec vous. Il n’y a pas de transfert de ces données personnelles à des
