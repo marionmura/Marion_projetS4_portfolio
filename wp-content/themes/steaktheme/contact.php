@@ -33,18 +33,18 @@ get_header();
                 <div class="font-Paytone my-4 bg-blanc-ivoir">
                     <div class="grid grid-rows-2">
                         <!-- <label for="email">Email</label> -->
-                        <input type="email" id="email" placeholder="Email" name="email" required>
+                        <input type="email" id="mail" placeholder="Email" name="mail" required>
                         <span class="w-full h-[3px] bg-gris"></span>
                     </div>
                     <div class="grid grid-cols-2 gap-10 my-4">
                         <div class="grid grid-rows-2">
                             <!-- <label for="nom">Nom</label> -->
-                            <input type="text" id="nom" name="nom" placeholder="Nom" required>
+                            <input type="text" id="lastname" name="lastname" placeholder="Nom" required>
                             <span class="w-full h-[3px] bg-gris"></span>
                         </div>
                         <div class="grid grid-rows-2">
                             <!-- <label for=" prenom">Prénom</label> -->
-                            <input type="text" id="prenom" name="prenom" placeholder="Prénom" required>
+                            <input type="text" id="surname" name="surname" placeholder="Prénom" required>
                             <span class="w-full h-[3px] bg-gris"></span>
                         </div>
                     </div>
@@ -55,8 +55,8 @@ get_header();
                         <span class="w-full h-[3px] bg-gris"></span>
                     </div>
                     <div class="grid grid-rows-2 py-20 ">
-                        <label class="" for="message">Message</label>
-                        <input name="message" id="message" class="text-[18px] bg-blanc-ivoir" placeholder="Pourquoi souhaitez-vous me contacter ?"></input>
+                        <label class="" for="content">Message</label>
+                        <input name="content" id="content" class="text-[18px] bg-blanc-ivoir" placeholder="Pourquoi souhaitez-vous me contacter ?"></input>
                         <span class="w-full h-[3px] bg-gris"></span>
                     </div>
                     <div class=' font-body text-[16px] mt-8'><input class='self-start mr-1' type="checkbox"
