@@ -27,3 +27,17 @@
    color: #9CA3B8;
  }
 
+ input[type="submit"]{
+    background-color: #9789F8;
+    font-family: Paytone One, sans-serif;
+    color: white;
+    padding: 10px 20px;
+    border: transparent;
+    border-radius: 50px;
+    width: 240px;
+    height: 75px;
+    cursor: pointer;
+    font-size: 25px;
+    margin-top: 10px;
+   box-shadow: 10px 12px 0px 0px #0F1322;
+}

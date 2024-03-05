@@ -641,11 +641,6 @@ video {
   margin-bottom: 1rem;
 }
 
-.my-8 {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
 .mb-12 {
   margin-bottom: 3rem;
 }
@@ -674,20 +669,12 @@ video {
   margin-top: 2.5rem;
 }
 
-.mt-\[3rem\] {
-  margin-top: 3rem;
-}
-
-.mt-12 {
-  margin-top: 3rem;
-}
-
-.mt-4 {
-  margin-top: 1rem;
-}
-
 .mt-8 {
   margin-top: 2rem;
+}
+
+.mt-\[3rem\] {
+  margin-top: 3rem;
 }
 
 .flex {
@@ -704,14 +691,6 @@ video {
 
 .h-0 {
   height: 0px;
-}
-
-.h-12 {
-  height: 3rem;
-}
-
-.h-\[1px\] {
-  height: 1px;
 }
 
 .h-\[20rem\] {
@@ -734,24 +713,12 @@ video {
   height: 35rem;
 }
 
-.h-\[50rem\] {
-  height: 50rem;
-}
-
-.h-\[0px\] {
-  height: 0px;
-}
-
-.h-\[0\.5px\] {
-  height: 0.5px;
-}
-
-.h-\[2px\] {
-  height: 2px;
-}
-
 .h-\[3px\] {
   height: 3px;
+}
+
+.h-\[50rem\] {
+  height: 50rem;
 }
 
 .w-0 {
@@ -843,16 +810,16 @@ video {
   gap: 0px;
 }
 
+.gap-10 {
+  gap: 2.5rem;
+}
+
 .gap-5 {
   gap: 1.25rem;
 }
 
 .gap-\[5rem\] {
   gap: 5rem;
-}
-
-.gap-10 {
-  gap: 2.5rem;
 }
 
 .self-start {
@@ -875,11 +842,6 @@ video {
   border-style: none !important;
 }
 
-.\!bg-violet {
-  --tw-bg-opacity: 1 !important;
-  background-color: rgb(151 137 248 / var(--tw-bg-opacity)) !important;
-}
-
 .bg-blanc-ivoir {
   --tw-bg-opacity: 1;
   background-color: rgb(246 242 234 / var(--tw-bg-opacity));
@@ -888,15 +850,6 @@ video {
 .bg-gris {
   --tw-bg-opacity: 1;
   background-color: rgb(23 28 48 / var(--tw-bg-opacity));
-}
-
-.bg-blanc {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.p-20 {
-  padding: 5rem;
 }
 
 .\!px-\[1rem\] {
@@ -912,16 +865,6 @@ video {
 .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
-}
-
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-.py-12 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
 }
 
 .py-20 {
@@ -941,6 +884,10 @@ video {
   padding-bottom: 8rem;
 }
 
+.pt-20 {
+  padding-top: 5rem;
+}
+
 .pt-\[20px\] {
   padding-top: 20px;
 }
@@ -953,22 +900,6 @@ video {
   padding-top: 8rem;
 }
 
-.pt-12 {
-  padding-top: 3rem;
-}
-
-.pt-8 {
-  padding-top: 2rem;
-}
-
-.pt-20 {
-  padding-top: 5rem;
-}
-
-.\!font-Paytone {
-  font-family: Paytone One, sans-serif !important;
-}
-
 .font-Paytone {
   font-family: Paytone One, sans-serif;
 }
@@ -979,6 +910,10 @@ video {
 
 .text-\[16px\] {
   font-size: 16px;
+}
+
+.text-\[18px\] {
+  font-size: 18px;
 }
 
 .text-\[25px\] {
@@ -999,22 +934,6 @@ video {
 
 .text-\[6rem\] {
   font-size: 6rem;
-}
-
-.text-\[10px\] {
-  font-size: 10px;
-}
-
-.text-\[20px\] {
-  font-size: 20px;
-}
-
-.text-\[15px\] {
-  font-size: 15px;
-}
-
-.text-\[18px\] {
-  font-size: 18px;
 }
 
 .\!text-blanc {

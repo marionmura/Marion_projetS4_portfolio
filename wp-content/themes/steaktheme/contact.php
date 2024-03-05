@@ -66,9 +66,9 @@ get_header();
                             tiers.</label></div>
                     <input type="hidden" name="action" value="process_contact_form">
                     <?php wp_nonce_field('process_contact_form', 'contact_form_nonce'); ?>
-                    <div class="flex justify-center">
+                    <div class=" flex justify-center">
                         <input
-                            class="!bg-violet hover:!bg-[#FFACAC] !px-[1rem] !text-blanc hover:!text-gris !font-Paytone !border-none !rounded-xl mb-7"
+                            class=" hover:!bg-[#FFACAC]  !text-blanc hover:!text-gris mb-7"
                             type="submit" value="ENVOYER">
                     </div>
             </form>
