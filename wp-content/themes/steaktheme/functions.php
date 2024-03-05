@@ -30,10 +30,10 @@ function process_contact_form() {
 		$content = esc_textarea( stripslashes( $_POST['content'] ) );
 
         // Construisez le contenu de l'e-mail
-	  	$message = "De: $lastname $surname\n";
 	  	$message .= "\nEmail: $mail\n";
+        $message = "De: $lastname $surname\n";
         $message .= "\nMessage:\n$content";
-	  	$message .= "\n\nMail envoyé automatiquement depuis le formulaire de contact de l'association Le Futur a déja commencé\n";
+	  	$message .= "\n\nMail envoyé automatiquement par le formulaire de contact du Portfolio de Marion MURA\n";
 	  	$message .= "https://marionmura.fr/";
 
         // Utilisez la fonction de courrier WordPress pour envoyer l'e-mail
