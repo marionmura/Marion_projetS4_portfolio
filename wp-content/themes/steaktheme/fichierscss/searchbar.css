@@ -19,10 +19,6 @@
     font-size: 25px;
  }
 
- input[type="text"]:focus textarea:focus, input[type="email"]:focus{
-   outline:none;
- }
-
  input[type="text"]::placeholder{
    color: #9CA3B8;
  }
