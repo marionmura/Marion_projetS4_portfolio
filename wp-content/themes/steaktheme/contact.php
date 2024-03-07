@@ -54,16 +54,14 @@ get_header();
                         <input class="text-[18px] bg-blanc-ivoir" name="object" placeholder="Ici l'objet de votre message">
                         <span class="w-full h-[3px] bg-gris"></span>
                     </div>
-                    <div class="grid grid-rows-2 py-20 ">
+                    <div class="grid grid-rows-2 pt-20 pb-20">
                         <label class="" for="content">Message</label>
                         <input name="content" id="content" class="text-[18px] bg-blanc-ivoir" placeholder="Pourquoi souhaitez-vous me contacter ?"></input>
                         <span class="w-full h-[3px] bg-gris"></span>
                     </div>
-                    <div class=' font-body text-[16px] mt-8'><input class='self-start mr-1' type="checkbox"
-                            name="MentionLegal" value="" required><label for="MentionLegal">En envoyant ce
-                            formulaire, j'accepte que mes informations saisies soient utilisées pour une prise de
-                            contact avec vous. Il n’y a pas de transfert de ces données personnelles à des
-                            tiers.</label></div>
+                    <div class=' font-body text-[16px] mt-4 mb-4'><input class='self-start mr-1' type="checkbox"
+                            name="MentionLegal" value="" required><label for="MentionLegal">J'accepte que mes informations soient utilisées pour une prise de
+                            contact avec vous.</label></div>
                     <input type="hidden" name="action" value="process_contact_form">
                     <?php wp_nonce_field('process_contact_form', 'contact_form_nonce'); ?>
                     <div class=" flex justify-center">

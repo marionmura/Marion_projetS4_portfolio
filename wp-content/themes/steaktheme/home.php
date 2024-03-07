@@ -127,7 +127,7 @@ get_header(); ?>
         </div>
     </div>
 
-    <div class="bg-blanc-ivoir my-10"></div>
+    <div class="bg-blanc-ivoir pb-10"></div>
 
 </div>
 
