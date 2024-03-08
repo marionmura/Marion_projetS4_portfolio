@@ -6,7 +6,7 @@ Template Name: apropos
 get_header();
 ?>
 <div class="bg-blanc-ivoir">
-    <div class="grid grid-cols-2 md:grid-cols-1 items-center gap-0 py-10">
+    <div class="grid grid-cols-2 justify-items-center md:grid-cols-1 items-center gap-0 py-10">
         <div class="">
             <img class="relative z-50 w-[80%] sm:w-[100%] right-0 flex flex-end" src="<?php
             echo wp_get_attachment_url(13); ?>" alt="banniere" />
@@ -40,40 +40,45 @@ get_header();
 </div>
 
 
-<div>
-    <div>
-        <h2>Ma vie abrégée</h2>
-        <p></p>
-    </div>
-    <img alt="toonme challenge photo de moi" />
-    <img alt="cercle violet" />
-
-    <div>
-        <h2>Mes logiciels favoris</h2>
+<div class="grid justify-items-center">
+    <div class="grid grid-cols-2 justify-items-center  items-center justify-center mx-[4rem]">
         <div>
+            <h2>Ma vie abrégée</h2>
+            <p class="py-4">J’ai 21 ans et je suis étudiante en <strong>2ème année du BUT MMI</strong> à Montbéliard. J’adore <strong>le design et l’animation</strong>, j'admire et essaye de réaliser différents styles graphiques, c'est souvent compliqué de me décider avant un projet.</p>
 
+            <p class="py-4">Le développement web n'est pas mon point fort mais j'ai eu l'occasion de m'exercer lors d'examens ou sur ce portfolio. J'ai expérimenté la création de sites web classiques en HTML et CSS, en Vue JS et TailwindCSS avec la gestion de PocketBase pour des pages dynamiques ainsi que le développement de thèmes Wordpress en PHP et CSS. </p>
+
+            <p class="py-4">Pendant mon temps libre j’adore <strong>dessiner, faire de l’animation 2D</strong> et créer des histoires, je dessine principalement sur Krita avec ma tablette graphique, mais quand ce n'est pas possible je dessine sur téléphone avec mon petit doigt ! (Mes dessins sont plus jolis que sur grand écran je me demande vraiment pourquoi je simplifie ma vie...)</p>
+
+            <p class="py-4">J'ai beaucoup de choses à dire sur moi mais ce n'est pas forcément intéressant ... Ah si, mes atouts aiguisés de graphiste concerne les logiciels de <strong>la suite Adobe ainsi que Figma</strong> et si vous avez des questions n'hésitez pas à me contacter, peut-être puis-je vous être utile et j'en serais ravie !</p>
+        </div>
+
+        <div class="relative">
+            <img class="w-[20rem] static" src="<?php echo wp_get_attachment_url(48); ?>" alt="toonme challenge photo de moi" />
+            <img class="w-[20rem] absolute z-[-1] left-[4rem] top-[8rem]" src="<?php echo wp_get_attachment_url(16); ?>"
+                alt="cercle violet" />
         </div>
     </div>
 
-    <img alt="bannière de moi(s)" />
+    <img src="<?php echo wp_get_attachment_url(41); ?>" alt="bannière de moi(s)" />
 
     <div>
-    <div class="">
-                <div class="socialnetwork justify-center items-center justify-items-center">
-                    <a href="https://www.instagram.com/steakosaure.png/" target="_blank">
+        <div class="">
+            <div class="socialnetwork justify-center items-center justify-items-center">
+                <a href="https://www.instagram.com/steakosaure.png/" target="_blank">
                     <img class="h-[59px]" src="<?php
                     echo wp_get_attachment_url(36); ?>" alt="icone instagram" /></a>
 
-                    <a href="https://www.behance.net/kiwwii_kawaii" target="_blank">
+                <a href="https://www.behance.net/kiwwii_kawaii" target="_blank">
                     <img class="" src="<?php
                     echo wp_get_attachment_url(33); ?>" alt="icone behance" /></a>
 
-                    <a href="https://www.linkedin.com/in/marion-mura-o9o/" target="_blank">
+                <a href="https://www.linkedin.com/in/marion-mura-o9o/" target="_blank">
                     <img class="" src="<?php
                     echo wp_get_attachment_url(34); ?>" alt="icone linkedin" /></a>
-                </div>
-                <p class="text-[18px] text-center">Retrouvez mon travail sur les réseaux sociaux !</p>
             </div>
+            <p class="text-[18px] text-center">Retrouvez mon travail sur les réseaux sociaux !</p>
+        </div>
     </div>
 </div>
 

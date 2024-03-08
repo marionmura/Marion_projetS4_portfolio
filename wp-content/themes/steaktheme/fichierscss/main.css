@@ -1,6 +1,6 @@
 /*MAIN*/
 .main{
-    background-color: blanc-ivoir;
+    background-color: #F6F2EA;
  }
 
 
@@ -8,6 +8,7 @@
     margin:0;
     font-family: 'Quicksand', sans-serif;
     width:auto;
+    background-color: #F6F2EA;
  }
  
  h1, h2, h3, h4, h5, h6{

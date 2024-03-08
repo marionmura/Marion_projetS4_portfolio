@@ -18,7 +18,7 @@ get_header(); ?>
 
 <div class="bg-blanc-ivoir">
 
-    <div class="grid grid-cols-2 md:grid-cols-1 items-center gap-0 py-10">
+    <div class="grid grid-cols-2 justify-items-center md:grid-cols-1 items-center gap-0 py-10">
         <div class="">
             <img class="relative z-50 w-[80%] sm:w-[100%] right-0 flex flex-end" src="<?php
             echo wp_get_attachment_url(13); ?>" alt="banniere" />

@@ -5,7 +5,7 @@ Template Name: Contact
 
 get_header();
 ?>
-<div class="bg-blanc-ivoir grid grid-cols-1  grid-center justify-items-center ">
+<div class="bg-blanc-ivoir grid grid-cols-1 justify-items-center ">
     <div class="gap-0 py-10">
         <div class="z-0">
             <img class="absolute w-[480px] left-[-100px] top-[50px] md:top-[0px] sm:w-[400px] sm:top-[-110px] sm:left-[-40px] "

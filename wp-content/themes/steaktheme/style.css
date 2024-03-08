@@ -554,6 +554,10 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.static {
+  position: static;
+}
+
 .absolute {
   position: absolute;
 }
@@ -574,6 +578,10 @@ video {
   left: 200px;
 }
 
+.left-\[4rem\] {
+  left: 4rem;
+}
+
 .right-0 {
   right: 0px;
 }
@@ -590,6 +598,10 @@ video {
   top: 50px;
 }
 
+.top-\[8rem\] {
+  top: 8rem;
+}
+
 .z-0 {
   z-index: 0;
 }
@@ -604,6 +616,10 @@ video {
 
 .z-50 {
   z-index: 50;
+}
+
+.z-\[-1\] {
+  z-index: -1;
 }
 
 .mx-\[15rem\] {
@@ -629,6 +645,21 @@ video {
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.mx-\[4\] {
+  margin-left: 4;
+  margin-right: 4;
+}
+
+.mx-\[4rem\] {
+  margin-left: 4rem;
+  margin-right: 4rem;
 }
 
 .mb-12 {
@@ -729,6 +760,10 @@ video {
 
 .w-\[18rem\] {
   width: 18rem;
+}
+
+.w-\[20rem\] {
+  width: 20rem;
 }
 
 .w-\[23rem\] {
@@ -850,6 +885,11 @@ video {
 .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .pb-10 {
