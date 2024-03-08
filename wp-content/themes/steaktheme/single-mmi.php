@@ -12,7 +12,8 @@
             </h3>
             <div class="">
                 <?php $term_image = get_field('photo'); ?>
-                <img class="img-article" src="<?php echo esc_url($term_image); ?>" alt="image">
+                <?php the_post_thumbnail( 'thumbnail' ); ?>
+                <!-- image mise en avant servant de logo -->
             </div>
 
             <div class="mb-[2rem] grid grid-cols-1 justify-items-center mx-[4rem]">
@@ -27,11 +28,9 @@
                         <?php the_field('p_resume'); ?>
                         <div class="grid grid-cols-2">
                         <?php $image_id = get_field('logo_du_projet'); ?>
-                            // Récupérer l'ID de l'image
+                            <!-- // Récupérer l'ID de l'image -->
 
-                        <img class="" src="<?php echo wp_get_attachment_url($image_id); ?>" alt="banniere" />
-                            <?php the_field('logo_du_projet'); ?>
-                            <img class="img-article" src="<?php echo esc_url($term_image); ?>" alt="image">
+                        <img class="" src="<?php echo wp_get_attachment_url($image_id); ?>" alt="img" />
                         </div>
                         
 
@@ -45,20 +44,26 @@
 
                             <div>
                                 <?php the_field('p-h3'); ?>
-                                <img class="img1-h3" src="<?php echo esc_url($term_image); ?>" alt="image">
+
+                                <?php $image2_id = get_field('img1-h3'); ?>
+                                <img class="" src="<?php echo wp_get_attachment_url($image2_id); ?>" alt="img" />
                                 <?php the_field('p2-h3'); ?>
-                                <img class="img2-h3" src="<?php echo esc_url($term_image); ?>" alt="image">
+
+                                <?php $image3_id = get_field('img2-h3'); ?>
+                                <img class="" src="<?php echo wp_get_attachment_url($image3_id); ?>" alt="img" />
                             </div>
 
                             <div>
                                 <?php the_field('h3-creation'); ?>
                                 <?php the_field('p-h3creation'); ?>
-                                <img class="img-h3creation" src="<?php echo esc_url($term_image); ?>" alt="image">
+
+                                <?php $image4_id = get_field('img-h3creation'); ?>
+                                <img class="" src="<?php echo wp_get_attachment_url($image4_id); ?>" alt="img" />
 
                                 <div>
-                                    <?php the_field('Behance'); ?>
-                                    <?php the_field('Instagram'); ?>
-                                    <?php the_field('Youtube'); ?>
+                                    <a href="<?php the_field('behance'); ?>">Behance</a>
+                                    <a href="<?php the_field('instagram'); ?>">Instagram</a>
+                                    <a href="<?php the_field('youtube'); ?>">Youtube</a>
 
                                 </div>
                             </div>
