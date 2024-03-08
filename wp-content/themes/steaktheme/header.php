@@ -14,9 +14,9 @@
 
 
   <body>
-    <div class="wrap">
+    <div class="wrap z-40">
         <div class="navigation">
-            <header class=" bg-blanc-ivoir">
+            <header class=" ">
             <!-- <button class="toggle-button" id="night-mode-btn">
                 <img class="moon-button" src="<?php
                     echo wp_get_attachment_url(23); ?>" alt="moonfull" />

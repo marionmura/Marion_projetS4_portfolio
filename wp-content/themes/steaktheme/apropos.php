@@ -6,10 +6,8 @@ Template Name: apropos
 get_header();
 ?>
 <div class="bg-blanc-ivoir">
-    <div class="grid grid-cols-2 justify-items-center md:grid-cols-1 items-center gap-0 py-10">
-        <div class="">
-            <img class="relative z-50 w-[80%] sm:w-[100%] right-0 flex flex-end" src="<?php
-            echo wp_get_attachment_url(13); ?>" alt="banniere" />
+    <div class="grid grid-cols-1 justify-items-center gap-0 py-10">
+        <div class="z-0">
             <img class="absolute w-[480px] left-[-100px] top-[50px] md:top-[0px] sm:w-[400px] sm:top-[-110px] sm:left-[-40px] "
                 src="<?php
                 echo wp_get_attachment_url(16); ?>" alt="cercle violet blur" />
@@ -20,14 +18,13 @@ get_header();
                 src="<?php
                 echo wp_get_attachment_url(18); ?>" alt="cercle vert blur" />
         </div>
-        <div class="z-20 pt-[50px] md:mx-[10%]">
-            <h1 class="home-h3  text-[4rem] md:text-[1.5rem] sm:text-[1rem]">
+        <div class="items-center mx-[4rem] z-40 pt-[50px] pb-[8rem]">
+            <h1 class="text-gris text-[4rem] font-Paytone md:text-2xl sm:text-[2rem]">
                 <?php the_title(); ?> de moi
             </h1>
-            <p class="text-gris text-[2rem] font-Paytone md:text-2xl sm:text-[2rem] z-40">Si vous êtes ici c'est à cause
-                de votre curiosité !</p>
-            <!-- <img class="cercle-rouge" src="<?php
-            echo wp_get_attachment_url(19); ?>" alt="cercle rouge blur" /> -->
+            <p class="mt-4 text-[24px] md:text-[20px] sm:text-[16px]">Si vous êtes ici c'est à cause de votre curiosité
+                !</p>
+            </p>
         </div>
     </div>
 
@@ -40,24 +37,49 @@ get_header();
 </div>
 
 
-<div class="grid justify-items-center mt-[6rem]">
-    <div class="grid grid-cols-2 justify-items-center  items-center justify-center mx-[4rem]">
+<div class="grid justify-items-center mt-[6rem] z-40">
+    <div
+        class="grid grid-cols-2 md:grid-cols-1 sm:grid-cols-1 justify-items-center  items-center justify-center mx-[4rem]">
         <div>
             <h2>Ma vie abrégée</h2>
-            <p class="py-4">J’ai 21 ans et je suis étudiante en <strong>2ème année du BUT MMI</strong> à Montbéliard. J’adore <strong>le design et l’animation</strong>, j'admire et essaye de réaliser différents styles graphiques, c'est souvent compliqué de me décider avant un projet.</p>
+            <p class="py-4">J’ai 21 ans et je suis étudiante en <strong>2ème année du BUT MMI</strong> à Montbéliard.
+                J’adore <strong>le design et l’animation</strong>, j'admire et essaye de réaliser différents styles
+                graphiques, c'est souvent compliqué de me décider avant un projet.</p>
 
-            <p class="py-4">Le développement web n'est pas mon point fort mais j'ai eu l'occasion de m'exercer lors d'examens ou sur ce portfolio. J'ai expérimenté la création de sites web classiques en HTML et CSS, en Vue JS et TailwindCSS avec la gestion de PocketBase pour des pages dynamiques ainsi que le développement de thèmes Wordpress en PHP et CSS. </p>
+            <p class="py-4">Le développement web n'est pas mon point fort mais j'ai eu l'occasion de m'exercer lors
+                d'examens ou sur ce portfolio. J'ai expérimenté la création de sites web classiques en HTML et CSS, en
+                Vue JS et TailwindCSS avec la gestion de PocketBase pour des pages dynamiques ainsi que le développement
+                de thèmes Wordpress en PHP et CSS. </p>
 
-            <p class="py-4">Pendant mon temps libre j’adore <strong>dessiner, faire de l’animation 2D</strong> et créer des histoires, je dessine principalement sur Krita avec ma tablette graphique, mais quand ce n'est pas possible je dessine sur téléphone avec mon petit doigt ! (Mes dessins sont plus jolis que sur grand écran je me demande vraiment pourquoi je simplifie ma vie...)</p>
+            <p class="py-4 md:hidden">Pendant mon temps libre j’adore <strong>dessiner, faire de l’animation 2D</strong>
+                et créer des histoires, je dessine principalement sur Krita avec ma tablette graphique, mais quand ce
+                n'est pas possible je dessine sur téléphone avec mon petit doigt ! (Mes dessins sont plus jolis que sur
+                grand écran je me demande vraiment pourquoi je simplifie ma vie...)</p>
 
-            <p class="py-4">J'ai beaucoup de choses à dire sur moi mais ce n'est pas forcément intéressant ... Ah si, mes atouts aiguisés de graphiste concerne les logiciels de <strong>la suite Adobe ainsi que Figma</strong> et si vous avez des questions n'hésitez pas à me contacter, peut-être puis-je vous être utile et j'en serais ravie !</p>
+            <p class="py-4 md:hidden">J'ai beaucoup de choses à dire sur moi mais ce n'est pas forcément intéressant ...
+                Ah si, mes atouts aiguisés de graphiste concerne les logiciels de <strong>la suite Adobe ainsi que
+                    Figma</strong> et si vous avez des questions n'hésitez pas à me contacter, peut-être puis-je vous
+                être utile et j'en serais ravie !</p>
         </div>
 
         <div class="relative">
-            <img class="w-[20rem] static" src="<?php echo wp_get_attachment_url(48); ?>" alt="toonme challenge photo de moi" />
+            <img class="w-[20rem] static" src="<?php echo wp_get_attachment_url(48); ?>"
+                alt="toonme challenge photo de moi" />
             <img class="w-[20rem] absolute z-[-1] left-[4rem] top-[8rem]" src="<?php echo wp_get_attachment_url(16); ?>"
                 alt="cercle violet" />
         </div>
+
+    </div>
+    <div class="mx-[4rem]">
+        <p class="py-4 md:block hidden ">Pendant mon temps libre j’adore <strong>dessiner, faire de l’animation
+                2D</strong> et créer des histoires, je dessine principalement sur Krita avec ma tablette graphique, mais
+            quand ce n'est pas possible je dessine sur téléphone avec mon petit doigt ! (Mes dessins sont plus jolis que
+            sur grand écran je me demande vraiment pourquoi je simplifie ma vie...)</p>
+
+        <p class="py-4  md:block hidden">J'ai beaucoup de choses à dire sur moi mais ce n'est pas forcément intéressant
+            ... Ah si, mes atouts aiguisés de graphiste concerne les logiciels de <strong>la suite Adobe ainsi que
+                Figma</strong> et si vous avez des questions n'hésitez pas à me contacter, peut-être puis-je vous être
+            utile et j'en serais ravie !</p>
     </div>
 
     <img src="<?php echo wp_get_attachment_url(41); ?>" alt="bannière de moi(s)" />
