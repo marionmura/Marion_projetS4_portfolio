@@ -3,31 +3,37 @@
 
     <?php while (have_posts()):
         the_post(); ?>
-        <article class="">
-            <h1 class="title">
-           <?php the_title(); ?>
+        <article class="text-gris">
+            <h1 class=" text-[6rem]  md:text-2xl sm:text-[2rem]">
+                <?php the_title(); ?>
             </h1>
+            <h3>
+                <?php the_field('date_du_projet'); ?>
+            </h3>
             <div class="">
+                <?php $term_image = get_field('photo'); ?>
+                <img class="img-article" src="<?php echo esc_url($term_image); ?>" alt="image">
+            </div>
+
+            <div class="mb-[2rem] grid grid-cols-1 justify-items-center mx-[4rem]">
 
                 <div class="">
-
-                    <div class="">
-                        <?php
-                        $term_image = get_field('photo'); ?>
-                        <img class="img-article" src="<?php echo esc_url($term_image); ?>" alt="image">
-                    </div>
-
-                    <div class="">
-                        <?php the_field('date_du_projet'); ?>
+                    <h2 class="text-[2rem]  md:text-2xl sm:text-[2rem]">
                         <?php the_field('h1_article'); ?>
-                    </div>
+                    </h2>
 
-                    <div class="">
+
+                    <div >
                         <?php the_field('p_resume'); ?>
-                        <div>
+                        <div class="grid grid-cols-2">
+                        <?php $image_id = get_field('logo_du_projet'); ?>
+                            // Récupérer l'ID de l'image
+
+                        <img class="" src="<?php echo wp_get_attachment_url($image_id); ?>" alt="banniere" />
                             <?php the_field('logo_du_projet'); ?>
                             <img class="img-article" src="<?php echo esc_url($term_image); ?>" alt="image">
                         </div>
+                        
 
                         <div>
                             <?php the_field('h2-outils_utilises'); ?>

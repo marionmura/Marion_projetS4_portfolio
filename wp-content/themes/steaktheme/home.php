@@ -21,7 +21,7 @@ get_header(); ?>
     <div class="grid grid-cols-2 justify-items-center md:grid-cols-1 items-center gap-0 py-10">
         <div class="">
             <img class="relative z-50 w-[80%] sm:w-[100%] right-0 flex flex-end" src="<?php
-            echo wp_get_attachment_url(13); ?>" alt="banniere" />
+            echo wp_get_attachment_url(73); ?>" alt="banniere" />
             <img class="absolute w-[480px] left-[-100px] top-[50px] md:top-[0px] sm:w-[400px] sm:top-[-110px] sm:left-[-40px] "
                 src="<?php
                 echo wp_get_attachment_url(16); ?>" alt="cercle violet blur" />
