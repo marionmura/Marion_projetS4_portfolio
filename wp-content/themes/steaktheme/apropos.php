@@ -40,7 +40,7 @@ get_header();
 </div>
 
 
-<div class="grid justify-items-center">
+<div class="grid justify-items-center mt-[6rem]">
     <div class="grid grid-cols-2 justify-items-center  items-center justify-center mx-[4rem]">
         <div>
             <h2>Ma vie abrégée</h2>
@@ -62,7 +62,7 @@ get_header();
 
     <img src="<?php echo wp_get_attachment_url(41); ?>" alt="bannière de moi(s)" />
 
-    <div>
+    <div class="pb-[4rem]">
         <div class="">
             <div class="socialnetwork justify-center items-center justify-items-center">
                 <a href="https://www.instagram.com/steakosaure.png/" target="_blank">
@@ -77,7 +77,7 @@ get_header();
                     <img class="" src="<?php
                     echo wp_get_attachment_url(34); ?>" alt="icone linkedin" /></a>
             </div>
-            <p class="text-[18px] text-center">Retrouvez mon travail sur les réseaux sociaux !</p>
+            <p class="text-[18px] font-Paytone text-center">Retrouvez mon travail sur les réseaux sociaux !</p>
         </div>
     </div>
 </div>
