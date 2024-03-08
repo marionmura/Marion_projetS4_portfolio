@@ -106,7 +106,7 @@ get_header(); ?>
     </div>
 
     <div
-        class="flex flex-cols-3 md:flex md:flex-row-2 md:flex-wrap sm:grid sm:grid-cols-1 justify-items-center gap-[5rem] md:gap-[1rem] mx-4 sm:mb-0">
+        class="flex flex-cols-3 md:flex md:flex-row-2 md:flex-wrap sm:grid sm:grid-cols-1 justify-items-center gap-[5rem] md:gap-[1rem]  justify-center sm:mb-0">
         <div
             class="w-[18rem] h-[35rem] md:w-[10rem] md:h-[20rem] sm:w-[15rem] sm:h-[15rem] bg-gris rounded-lg lg:mb-16 sm:mb-0">
         </div>

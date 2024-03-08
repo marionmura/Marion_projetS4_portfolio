@@ -22,8 +22,9 @@ get_header();
     </div>
     <div class="items-center z-40 pt-[50px] mx-[15rem] pb-[8rem]">
         <h1 class="text-gris text-[4rem] font-Paytone md:text-2xl sm:text-[2rem]">Besoin de me contacter?</h1>
-        <p class="mt-4 text-[24px] md:text-[20px] sm:text-[16px]">Besoin d'un renseignement ou envie de me faire part de vos idées ? N'hésitez pas à remplir ce formulaire, je suis à votre écoute !</p>
-            </p>
+        <p class="mt-4 text-[24px] md:text-[20px] sm:text-[16px]">Besoin d'un renseignement ou envie de me faire part de
+            vos idées ? N'hésitez pas à remplir ce formulaire, je suis à votre écoute !</p>
+        </p>
     </div>
 
 
@@ -62,9 +63,9 @@ get_header();
                         <span class="w-full h-[3px] bg-gris"></span>
                     </div>
                     <div class=' font-body text-[16px] mt-4 mb-4'><input class='self-start mr-1' type="checkbox"
-                            name="MentionLegal" value="" required><label for="MentionLegal">J'accepte que mes
-                            informations soient utilisées pour une prise de
-                            contact avec vous.</label></div>
+                            name="MentionLegal" value="" required><label for="MentionLegal">J'accepte que les
+                            informations fournies soient collectées et utilisées pour répondre à ma demande.</label>
+                    </div>
                     <input type="hidden" name="action" value="process_contact_form">
                     <?php wp_nonce_field('process_contact_form', 'contact_form_nonce'); ?>
                     <div class=" flex justify-center">
@@ -72,6 +73,27 @@ get_header();
                             value="ENVOYER">
                     </div>
             </form>
+
+            <div class="">
+                <div class="socialnetwork justify-center items-center justify-items-center">
+                    <a href="https://www.instagram.com/steakosaure.png/" target="_blank">
+                    <img class="h-[59px]" src="<?php
+                    echo wp_get_attachment_url(36); ?>" alt="icone instagram" /></a>
+
+                    <a href="https://www.behance.net/kiwwii_kawaii" target="_blank">
+                    <img class="" src="<?php
+                    echo wp_get_attachment_url(33); ?>" alt="icone behance" /></a>
+
+                    <a href="https://www.linkedin.com/in/marion-mura-o9o/" target="_blank">
+                    <img class="" src="<?php
+                    echo wp_get_attachment_url(34); ?>" alt="icone linkedin" /></a>
+                </div>
+                <p class="text-[18px] text-center">Vous pouvez me contacter aussi ici !</p>
+            </div>
         </div>
     </div>
 </div>
+
+<?php
+get_footer();
+?>
