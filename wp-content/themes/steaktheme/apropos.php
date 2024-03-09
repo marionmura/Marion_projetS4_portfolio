@@ -5,20 +5,20 @@ Template Name: apropos
 
 get_header();
 ?>
-<div class="bg-blanc-ivoir">
+<div class="">
     <div class="grid grid-cols-1 justify-items-center gap-0 py-10">
-        <div class="z-0">
-            <img class="absolute w-[480px] left-[-100px] top-[50px] md:top-[0px] sm:w-[400px] sm:top-[-110px] sm:left-[-40px] "
+        <div class="">
+            <img class="absolute z-[-1] w-[480px] left-[-100px] top-[50px] md:top-[0px] sm:w-[400px] sm:top-[-110px] sm:left-[-40px] "
                 src="<?php
                 echo wp_get_attachment_url(16); ?>" alt="cercle violet blur" />
-            <img class="absolute w-[250px] top-[320px] left-[200px] md:w-[200px] md:left-[150px] md:top-[380px] sm:w-[200px] sm:left-10 sm:top-[200px]"
+            <img class="absolute z-[-1] w-[250px] top-[320px] left-[200px] md:w-[200px] md:left-[150px] md:top-[380px] sm:w-[200px] sm:left-10 sm:top-[200px]"
                 src="<?php
                 echo wp_get_attachment_url(17); ?>" alt="cercle orange blur" />
-            <img class="absolute w-[240px] top-0 left-[180px] md:w-[200px] md:left-[200px] sm:w-[190px] sm:left-[190px] sm:top-[-70px] overflow-hidden"
+            <img class="absolute z-[-1] w-[240px] top-0 left-[180px] md:w-[200px] md:left-[200px] sm:w-[190px] sm:left-[190px] sm:top-[-70px] overflow-hidden"
                 src="<?php
                 echo wp_get_attachment_url(18); ?>" alt="cercle vert blur" />
         </div>
-        <div class="items-center mx-[4rem] z-40 pt-[50px] pb-[8rem]">
+        <div class="items-center sm:mx-[2rem] md:mx-[2rem] mx-[12vw] z-40 pt-[50px] pb-[8rem]">
             <h1 class="text-gris text-[4rem] font-Paytone md:text-2xl sm:text-[2rem]">
                 <?php the_title(); ?> de moi
             </h1>

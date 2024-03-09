@@ -5,22 +5,22 @@ Template Name: Contact
 
 get_header();
 ?>
-<div class="bg-blanc-ivoir grid grid-cols-1 justify-items-center ">
+<div class=" grid grid-cols-1 justify-items-center ">
     <div class="gap-0 py-10">
-        <div class="z-0">
-            <img class="absolute w-[480px] left-[-100px] top-[50px] md:top-[0px] sm:w-[400px] sm:top-[-110px] sm:left-[-40px] "
+        <div class="">
+            <img class="absolute z-[-1] w-[480px] left-[-100px] top-[50px] md:top-[0px] sm:w-[400px] sm:top-[-110px] sm:left-[-40px] "
                 src="<?php
                 echo wp_get_attachment_url(17); ?>" alt="cercle violet blur" />
-            <img class="absolute w-[250px] top-[320px] left-[200px] md:w-[200px] md:left-[150px] md:top-[380px] sm:w-[200px] sm:left-10 sm:top-[200px]"
+            <img class="absolute z-[-1] w-[250px] top-[320px] left-[200px] md:w-[200px] md:left-[150px] md:top-[380px] sm:w-[200px] sm:left-10 sm:top-[200px]"
                 src="<?php
                 echo wp_get_attachment_url(16); ?>" alt="cercle orange blur" />
-            <img class="absolute w-[240px] top-0 left-[180px] md:w-[200px] md:left-[200px] sm:w-[190px] sm:left-[190px] sm:top-[-70px] overflow-hidden"
+            <img class="absolute z-[-1] w-[240px] top-0 left-[180px] md:w-[200px] md:left-[200px] sm:w-[190px] sm:left-[190px] sm:top-[-70px] overflow-hidden"
                 src="<?php
                 echo wp_get_attachment_url(19); ?>" alt="cercle rouge blur" />
         </div>
 
     </div>
-    <div class="items-center z-40 pt-[50px] mx-[15rem] pb-[8rem]">
+    <div class="items-center z-40 pt-[50px] sm:mx-[2rem] md:mx-[2rem] mx-[12vw] pb-[8rem]">
         <h1 class="text-gris text-[4rem] font-Paytone md:text-2xl sm:text-[2rem]">Besoin de me contacter?</h1>
         <p class="mt-4 text-[24px] md:text-[20px] sm:text-[16px]">Besoin d'un renseignement ou envie de me faire part de
             vos idées ? N'hésitez pas à remplir ce formulaire, je suis à votre écoute !</p>
