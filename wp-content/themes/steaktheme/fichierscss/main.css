@@ -28,3 +28,8 @@
     width: 80%;
     height: auto;
  }
+
+ .grid {
+   display:grid;
+   align-content:space-between;
+ }
