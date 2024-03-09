@@ -17,7 +17,8 @@
                         echo wp_get_attachment_url(17); ?>" alt="cercle vert blur" />
                 </div>
 
-                <div class="z-40 grid grid-cols-2 md:grid-cols-1 gap-[2rem] justify-items-center items-center pt-[50px] md:py-[2rem]">
+                <div
+                    class="z-40 grid grid-cols-2 md:grid-cols-1 gap-[2rem] justify-items-center items-center pt-[50px] md:py-[2rem]">
                     <div>
                         <h1 class=" text-[4rem]  md:text-2xl sm:text-[2rem] pb-5">
                             <?php the_title(); ?>
@@ -33,7 +34,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <!-- //résumé article -->
             <h2 class="z-40 text-[2rem] pb-5 md:text-2xl sm:text-[2rem]">
                 <?php the_field('h1_article'); ?>
@@ -46,11 +47,12 @@
                     <div class="">
                         <?php the_field('p_resume'); ?>
                     </div>
-                    <div>
+                    <div class="">
                         <?php $image_id = get_field('logo_du_projet'); ?>
                         <!-- // Récupérer l'ID de l'image -->
 
                         <img class="w-[25rem]" src="<?php echo wp_get_attachment_url($image_id); ?>" alt="img" />
+
                     </div>
                 </div>
             </div>
@@ -117,7 +119,7 @@
                         echo '<img class="w-[50px]" src="' . esc_url(wp_get_attachment_image_url(85, 'thumbnail')) . '" alt="Pinterest Icon">';
                     }
                     ?>
-
+                    
                 </div>
             </div>
 
@@ -133,7 +135,7 @@
                     <div class="grid grid-cols-1 gap-[2rem] justify-items-center">
                         <?php the_field('p-h3'); ?>
 
-                        <div class="pt-2">
+                        <div class="pt-2 ">
                             <?php $image2_id = get_field('img1-h3'); ?>
                             <img class="w-[25rem]" src="<?php echo wp_get_attachment_url($image2_id); ?>" alt="img" />
                         </div>
@@ -141,9 +143,11 @@
 
                     <div class="grid grid-cols-1 gap-[2rem] sm:gap-[4rem]  justify-items-center">
                         <?php the_field('p2-h3'); ?>
-                        <div class="">
+                        <div class="relative">
                             <?php $image3_id = get_field('img2-h3'); ?>
                             <img class="w-[25rem]" src="<?php echo wp_get_attachment_url($image3_id); ?>" alt="img" />
+                            <img class="w-[20rem] absolute z-[-1] left-[1rem] md:top-[12rem] sm:top-[8rem] top-[15rem]"
+                                src="<?php echo wp_get_attachment_url(19); ?>" alt="cercle rouge" />
                         </div>
                     </div>
                 </div>
@@ -155,9 +159,11 @@
                     <div class="grid grid-cols-2 md:grid-cols-1 content-between gap-[2rem] sm:gap-[4rem] ">
                         <div class="grid grid-cols-1 gap-[2rem] justify-items-center">
                             <?php the_field('p-h3creation'); ?>
-                            <div class="">
+                            <div class="relative">
                                 <?php $image4_id = get_field('img-h3creation'); ?>
                                 <img class="w-[25rem]" src="<?php echo wp_get_attachment_url($image4_id); ?>" alt="img" />
+                                <img class="w-[20rem] absolute z-[-1] left-[-10rem] sm:top-[5rem] top-[0rem]"
+                                    src="<?php echo wp_get_attachment_url(18); ?>" alt="cercle vert" />
                             </div>
                         </div>
                         <div class="grid grid-cols-1  justify-items-center">
