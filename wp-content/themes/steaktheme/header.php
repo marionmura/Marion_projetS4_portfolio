@@ -16,14 +16,8 @@
   <body>
     <div class="wrap z-40">
         <div class="navigation">
-            <header class=" ">
-            <!-- <button class="toggle-button" id="night-mode-btn">
-                <img class="moon-button" src="<?php
-                    echo wp_get_attachment_url(23); ?>" alt="moonfull" />
-            </button> -->
-
-              
-                <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php echo wp_get_attachment_image(64, 'full'); ?></a>
+            <header class="grid-header mx-[4rem] sm:mx-[2rem] mt-2">           
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img class="lg:w-[100px] w-[150px]" src="<?php echo wp_get_attachment_url(90); ?>" alt="img" /></a>
                 
                 <div class="header pt-[20px]">
                   <?php
