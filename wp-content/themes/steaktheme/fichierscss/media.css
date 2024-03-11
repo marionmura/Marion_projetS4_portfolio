@@ -28,4 +28,7 @@
     z-index:0;
   }
 
+  .shadowbulle{
+    filter: drop-shadow(4px 0px 0px #171C30);
+  }
   

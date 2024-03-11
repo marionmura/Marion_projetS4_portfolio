@@ -10,6 +10,18 @@
     }
     add_action( 'init', 'register_my_menu', 0 );
 
+    add_action('init', 'register_articlesmmi_taxonomy');
+
+    function register_articlesmmi_taxonomy() {
+        register_taxonomy('articlesmmi', 'post', array(
+            'label' => 'Articles-MMI',
+            'rewrite' => array('slug' => 'articlesmmi'),
+            'hierarchical' => true,
+            'show_admin_column' => true,
+            'object_type' => array('post'),
+        ));
+    }
+
    
     function enqueue_tailwind_css() {
         // Trouve le fichier tailwind.css dans le dossier du thème
