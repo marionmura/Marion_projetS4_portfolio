@@ -46,48 +46,51 @@
 </div> -->
 
 <div class="">
-    <?php 
-    $term = get_term_by('slug', 'articlesmmi', 'articlesmmi'); // Remplacez 'animation' par le slug du terme spécifique
+    <?php
+    $taxonomy = 'articlesmmi';
+    $term_slug = 'animation';  // Remplacez 'animation' par le slug du terme que vous souhaitez afficher
 
-    if ($term) {
-        $args = array(
-            'post_type' => 'post',
-            'tax_query' => array(
-                array(
-                    'taxonomy' => 'articlesmmi',
-                    'field' => 'term_id',
-                    'terms' => $term->term_id,
-                ),
+    // Récupérez l'ID du terme en utilisant son slug
+    $term = get_term_by('slug', $term_slug, $taxonomy);
+    $term_id = $term->term_id;
+
+    // Construisez la requête pour récupérer les articles liés à la taxonomie spécifiée
+    $args = array(
+        'post_type' => 'post',  // Assurez-vous que 'post' est le type de publication que vous recherchez
+        'tax_query' => array(
+            array(
+                'taxonomy' => $taxonomy,
+                'field' => 'term_id',
+                'terms' => $term_id,
             ),
-        );
+        ),
+    );
 
-        $query = new WP_Query($args);
+    $query = new WP_Query($args);
 
-        if ($query->have_posts()): 
-            while ($query->have_posts()):
-                $query->the_post(); 
-    ?>
-                <article class="">
-                    <?php the_post_thumbnail('thumbnail'); ?>
-                    <div class="">
-                        <h3 class="title">
-                            <a href="<?php the_permalink(); ?>">
-                                <?php the_title(); ?>
-                            </a>
-                        </h3>
-                        <p class="description">voir le projet</p>
-                    </div>
-                </article>
-    <?php 
-            endwhile; 
-            wp_reset_postdata();
-        endif; 
-    } else {
-        echo 'Le terme spécifié n\'a pas été trouvé.';
-    }
+    // La boucle WordPress
+    if ($query->have_posts()) :
+        while ($query->have_posts()) : $query->the_post();
+            ?>
+            <article class="">
+                <?php the_post_thumbnail('thumbnail'); ?>
+                <div class="">
+                    <h3 class="title">
+                        <a href="<?php the_permalink(); ?>">
+                            <?php the_title(); ?>
+                        </a>
+                    </h3>
+                    <p class="description">voir le projet</p>
+                </div>
+            </article>
+            <?php
+        endwhile;
+        wp_reset_postdata(); // Réinitialisez les données du post
+    else :
+        echo 'Aucun article trouvé.';
+    endif;
     ?>
 </div>
-
 
 
 <?php get_footer(); ?>
