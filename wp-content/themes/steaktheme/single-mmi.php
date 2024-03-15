@@ -175,17 +175,17 @@
 
                                 if (in_array('Behance', $reseaux)) {
                                     $behance_link = get_field('behance');
-                                    echo '<a href="' . esc_url($behance_link) . '"><img class="h-[40px]" src="' . esc_url(wp_get_attachment_image_url(33, 'thumbnail')) . '" alt="Behance Icon"></a>';
+                                    echo '<a href="' . esc_url($behance_link) . '" target="_blank" ><img class="h-[40px]" src="' . esc_url(wp_get_attachment_image_url(33, 'thumbnail')) . '" alt="Behance Icon"></a>';
                                 }
 
                                 if (in_array('Instagram', $reseaux)) {
                                     $instagram_link = get_field('instagram');
-                                    echo '<a href="' . esc_url($instagram_link) . '"><img class="h-[40px]" src="' . esc_url(wp_get_attachment_image_url(36, 'thumbnail')) . '" alt="Instagram Icon"></a>';
+                                    echo '<a href="' . esc_url($instagram_link) . '" target="_blank" ><img class="h-[40px]" src="' . esc_url(wp_get_attachment_image_url(36, 'thumbnail')) . '" alt="Instagram Icon"></a>';
                                 }
 
                                 if (in_array('Youtube', $reseaux)) {
                                     $youtube_link = get_field('youtube');
-                                    echo '<a href="' . esc_url($youtube_link) . '"><img class="h-[40px]" src="' . esc_url(wp_get_attachment_image_url(81, 'thumbnail')) . '" alt="Behance Icon"></a>';
+                                    echo '<a href="' . esc_url($youtube_link) . '" target="_blank" ><img class="h-[40px]" src="' . esc_url(wp_get_attachment_image_url(81, 'thumbnail')) . '" alt="Behance Icon"></a>';
                                 }
                                 ?>
                                 <!-- <a href="<?php the_field('behance'); ?>">Behance</a>-->
