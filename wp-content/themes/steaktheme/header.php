@@ -23,7 +23,16 @@
         <a href="<?php echo esc_url(home_url('/')); ?>">
           <img class="lg:w-[100px] w-[150px]" src="<?php echo wp_get_attachment_url(90); ?>" alt="img" />
         </a>
-        <div class="sm:header-mobileul">
+        <div class="md:header-mobileul hidden md:block">
+          <?php
+          wp_nav_menu(
+            array(
+              'theme_location' => 'header-menu',
+            )
+          );
+          ?>
+        </div>
+        <div class="md:hidden flex justify-end">
           <?php
           wp_nav_menu(
             array(

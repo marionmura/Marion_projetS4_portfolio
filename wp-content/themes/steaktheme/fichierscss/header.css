@@ -31,12 +31,13 @@
     margin-right:10px;
 }
 
-.header-mobileul > div > ul {
+.md\:header-mobileul > div > ul {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   justify-content: flex-end;
+  justify-items: flex-end; /* item alignés par la fin en mobile et tablette */
   gap: 30px;
-  margin-right:10px;
+  margin-right: 10px;
 }
 
 

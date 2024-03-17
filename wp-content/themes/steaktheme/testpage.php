@@ -120,6 +120,8 @@
     
 
     echo '<br/>';
+
+    $cat_taxonomie = 'articlemmi';
     $args = array (
         'showposts' => '20',
         // 'cat' => $cat_detail->term_id,
