@@ -19,9 +19,9 @@
 <body>
   <div class="wrap z-40">
     <div class="navigation">
-      <header class="grid-header mx-[4rem] sm:mx-[2rem] mt-2">
+      <header class="grid-header mx-[4rem] md:mx-[1rem] mt-2">
         <a href="<?php echo esc_url(home_url('/')); ?>">
-          <img class="lg:w-[100px] w-[150px]" src="<?php echo wp_get_attachment_url(90); ?>" alt="img" />
+          <img class="lg:w-[100px] w-[120px]" src="<?php echo wp_get_attachment_url(90); ?>" alt="img" />
         </a>
         <div class="md:header-mobileul hidden md:block">
           <?php

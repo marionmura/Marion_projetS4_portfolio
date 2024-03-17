@@ -28,8 +28,8 @@
                         </h3>
                     </div>
                     <div class="">
-                        <?php $term_image = get_field('photo'); ?>
-                        <?php the_post_thumbnail('thumbnail'); ?>
+                        <!-- <?php $term_image = get_field('photo'); ?>
+                        <?php the_post_thumbnail('thumbnail'); ?> -->
                         <!-- image mise en avant servant de logo -->
                     </div>
                 </div>
