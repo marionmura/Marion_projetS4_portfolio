@@ -43,12 +43,12 @@
 
 <!-- <div class="">
     <?php
-    $taxonomy = 'articlesmmi';
-    $term_slug = 'articlesmmi';  // Remplacez 'animation' par le slug du terme que vous souhaitez afficher
+    $taxonomy = 'articlemmi';
+    // $term_slug = 'articlesmmi';  // Remplacez 'animation' par le slug du terme que vous souhaitez afficher
 
-    // Récupérez l'ID du terme en utilisant son slug
-    $term = get_term_by('slug', $term_slug, $taxonomy);
-    $term_id = $term->term_id;
+    // // Récupérez l'ID du terme en utilisant son slug
+    // $term = get_term_by('slug', $term_slug, $taxonomy);
+    // $term_id = $term->term_id;
 
     // Construisez la requête pour récupérer les articles liés à la taxonomie spécifiée
     $args = array(
