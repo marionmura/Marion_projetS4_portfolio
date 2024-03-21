@@ -18,14 +18,14 @@
 
 
 <div class="grid grid-cols-3 md:grid-cols-1 sm:grid-cols-1  gap-0 m-0 p-0">
-    <?php if (have_posts()) : ?>
+    <!-- <?php if (have_posts()) : ?>
         <?php while (have_posts()) :
-            the_post(); ?>
-            <!-- à ajouter dans article et div plus haut border border-gray-300 pour voir la grid -->
+                    the_post(); ?>
+            // à ajouter dans article et div plus haut border border-gray-300 pour voir la grid 
             <article class=" ">
                 <a href="<?php the_permalink(); ?>">
                     <?php the_post_thumbnail('large'); ?> </a>
-                <!-- <div class="">
+                <div class="">
                     <h3 class="title">
                         
                             <?php the_title(); ?>
@@ -33,10 +33,67 @@
                     <p class="description">voir le projet</p>
                     
 
-                </div> -->
-            </article>
+                </div> 
+            </article> // boucle pour récup tous les articles
+            // on va mettre en triant par type d'articles visuellement - tout design puis tout animation puis tout ce qui reste s'il y a d'autre cat
         <?php endwhile; ?>
-    <?php endif; ?>
+    <?php endif; ?> -->
+
+
+
+    <!-- afficher les articles sur l'animation -->
+    <?php echo '<br/>';
+
+    $cat_taxonomie = 'articlemmi';
+    $args = array(
+        'showposts' => '6',
+        'tax_query' => array(
+            array(
+                'taxonomy' => $cat_taxonomie,
+                'field'    => 'slug',
+                'terms'    => array('animation')
+
+            )
+        ),
+    );
+    $the_query = new WP_query($args);
+
+    if ($the_query->have_posts()) {
+        while ($the_query->have_posts()) {
+            $the_query->the_post();
+            echo '<a href="' . get_permalink() . '">';
+            the_post_thumbnail('large');
+            echo '</a>';
+        }
+    }
+    wp_reset_postdata();
+
+    // afficher les articles sur le design
+    $args2 = array(
+        'showposts' => '6',
+        'tax_query' => array(
+            array(
+                'taxonomy' => $cat_taxonomie,
+                'field'    => 'slug',
+                'terms'    => array('design')
+
+            )
+        ),
+    );
+
+    $the_query2 = new WP_query($args2);
+
+    if ($the_query2->have_posts()) {
+        while ($the_query2->have_posts()) {
+            $the_query2->the_post();
+            echo '<a href="' . get_permalink() . '">';
+            the_post_thumbnail('large');
+            echo '</a>';
+        }
+    }
+    wp_reset_postdata();
+    ?>
+
 </div>
 
 
