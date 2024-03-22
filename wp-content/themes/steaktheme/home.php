@@ -6,22 +6,26 @@ get_header(); ?>
 
     <div class="grid grid-cols-1 justify-items-center md:grid-cols-1 items-center gap-0 py-10 sm:mx-[2rem] md:mx-[2rem] mx-[12vw]">
         <div class="">
-            <img class="absolute z-[-1] w-[480px] left-[-100px] top-[50px] md:top-[0px] sm:w-[400px] sm:top-[-110px] sm:left-[-40px] " src="<?php
-                                                                                                                                            echo wp_get_attachment_url(16); ?>" alt="cercle violet blur" />
-            <img class="absolute z-[-1] w-[250px] top-[320px] left-[200px] md:w-[200px] md:left-[150px] md:top-[380px] sm:w-[200px] sm:left-10 sm:top-[200px]" src="<?php
-                                                                                                                                                                    echo wp_get_attachment_url(17); ?>" alt="cercle orange blur" />
-            <img class="absolute z-[-1] w-[240px] top-0 left-[180px] md:w-[200px] md:left-[200px] sm:w-[190px] sm:left-[190px] sm:top-[-70px] overflow-hidden" src="<?php
-                                                                                                                                                                    echo wp_get_attachment_url(18); ?>" alt="cercle vert blur" />
+            <img class="absolute z-[-1] w-[480px] left-[-100px] top-[50px] md:top-[0px] sm:w-[400px] sm:top-[-110px] sm:left-[-40px] " src="<?php echo wp_get_attachment_url(16); ?>" alt="cercle violet blur" />
+            <img class="absolute z-[-1] w-[250px] top-[320px] left-[200px] md:w-[200px] md:left-[150px] md:top-[380px] sm:w-[200px] sm:left-10 sm:top-[200px]" src="<?php echo wp_get_attachment_url(17); ?>" alt="cercle orange blur" />
+            <img class="absolute z-[-1] w-[240px] top-0 left-[180px] md:w-[200px] md:left-[200px] sm:w-[190px] sm:left-[190px] sm:top-[-70px] overflow-hidden" src="<?php echo wp_get_attachment_url(18); ?>" alt="cercle vert blur" />
         </div>
-        <div class="z-40 grid grid-cols-2 md:grid-cols-1 gap-[2rem] justify-items-center items-center pt-[50px] md:py-[2rem]">
+        <!-- <div class="z-40 grid grid-cols-2 md:grid-cols-1 gap-[2rem] justify-items-center items-center pt-[50px] md:py-[2rem]">
 
-            <img class="right-0 flex flex-end" src="<?php
-                                                    echo wp_get_attachment_url(73); ?>" alt="banniere" />
+            <img class="right-0 flex flex-end" src="<?php echo wp_get_attachment_url(73); ?>" alt="banniere" />
             <div>
                 <p class="home-h3  text-[2rem] md:text-[1.5rem] sm:text-[1rem]">Je suis Marion , graphiste et web
                     designeuse
                 </p>
                 <p class="text-gris text-[4rem] font-Paytone md:text-2xl sm:text-[2rem] z-40">Marion MURA</p>
+
+                
+                </div>
+            </div> -->
+        <div class="grid grid-cols-1 justify-items-center mb-[10rem]">
+            <img class="w-max filter-gris" src="<?php echo wp_get_attachment_url(112); ?>" alt="banniere" />
+            <div class="glassmorphisme p-5 px-5">
+                <h1 class="text-[8rem]">PORTFOLIO</h1>
             </div>
         </div>
     </div>
@@ -34,32 +38,32 @@ get_header(); ?>
 
 
     <div class="mx-4 pt-[8rem]">
-        <div class="grid justify-items-start mx-[4rem] md:mx-[2rem] sm:mx[1rem]">
+        <div class="grid justify-items-start mx-[12rem] md:mx-[2rem] sm:mx[1rem]">
             <div class="grid grid-cols-2 gap-[12rem] items-baseline sm:justify-items-center">
                 <h1 class="text-[5rem] md:text-[3rem] justify-self-start">Design</h1>
                 <p class="justify-self-end">voir plus</p>
             </div>
-            <span class="block justify-items-center w-full h-[2px] bg-gris"></span>
+            <span class="block justify-items-center w-full h-[2px] mt-[-20px] bg-gris"></span>
         </div>
 
-        <div class="grid justify-items-start mx-[4rem] md:mx-[2rem] sm:mx[1rem]">
+        <div class="grid justify-items-start mx-[12rem] md:mx-[2rem] sm:mx[1rem]">
             <h1 class="text-[5rem] grid  text-transparent strokehomepage-motiondesign md:text-[3rem]">Motion design</h1>
-            <span class="block justify-items-center w-full h-[2px] bg-gris"></span>
+            <span class="block justify-items-center w-full h-[2px] mt-[-20px] bg-gris"></span>
         </div>
 
-        <div class="grid justify-items-start mx-[4rem] md:mx-[2rem] sm:mx[1rem]">
+        <div class="grid justify-items-start mx-[12rem] md:mx-[2rem] sm:mx[1rem]">
             <h1 class="text-[5rem] grid text-transparent strokehomepage-webdesign md:text-[3rem]">Web design</h1>
-            <span class="block justify-items-center w-full  h-[2px] bg-gris"></span>
+            <span class="block justify-items-center w-full  h-[2px] mt-[-20px] bg-gris"></span>
         </div>
 
-        <div class="grid justify-items-start mx-[4rem] md:mx-[2rem] sm:mx[1rem]">
+        <div class="grid justify-items-start mx-[12rem] md:mx-[2rem] sm:mx[1rem]">
             <h1 class="text-[5rem] grid text-transparent strokehomepage-graphisme md:text-[3rem]">Graphisme</h1>
-            <span class="block justify-items-center w-full h-[2px] bg-gris"></span>
+            <span class="block justify-items-center w-full h-[2px] mt-[-20px] bg-gris"></span>
         </div>
 
 
         <div class="grid grid-cols-3 gap-2 m-2 md:grid md:grid-cols-1 my-[6rem]">
-            <?php 
+            <?php
             $cat_taxonomie = 'articlemmi';
             $args = array(
                 'showposts' => '3',
@@ -67,7 +71,7 @@ get_header(); ?>
                     array(
                         'taxonomy' => $cat_taxonomie,
                         'field'    => 'slug',
-                        'terms'    => array('animation','design')
+                        'terms'    => array('animation', 'design')
 
                     )
                 ),
@@ -87,16 +91,16 @@ get_header(); ?>
         </div>
 
 
-        <div class="grid justify-items-start mx-[4rem] md:mx-[2rem] sm:mx[1rem]">
+        <div class="grid justify-items-start mx-[12rem] md:mx-[2rem] sm:mx[1rem]">
             <div class="grid grid-cols-2 gap-[12rem] items-baseline sm:justify-items-center">
                 <h1 class="text-[5rem] md:text-[3rem] justify-self-start">Dessin</h1>
                 <p class="justify-self-end">voir plus</p>
             </div>
-            <span class="block justify-items-center w-full h-[2px] bg-gris"></span>
+            <span class="block justify-items-center w-full h-[2px] mt-[-20px] bg-gris"></span>
         </div>
 
         <div class="grid grid-cols-3 gap-2 m-2 md:grid md:grid-cols-1 my-[6rem]">
-            <?php 
+            <?php
             $cat_taxonomie = 'perso';
             $args = array(
                 'showposts' => '3',

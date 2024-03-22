@@ -33,4 +33,24 @@
   }
 
 
-  
+.filter-gris{
+  content:"";
+  position:absolute;
+  top:150px;
+  width:90%;
+  background-size: cover;
+  filter:grayscale(100%);
+  transition:0.35s;
+  }
+
+
+.filter-gris:hover{
+  filter:none;
+}
+
+.glassmorphisme{
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 1px 1px 4px 0px rgba(20, 0, 255, 0.25);
+  backdrop-filter: blur(1.350000023841858px);
+}

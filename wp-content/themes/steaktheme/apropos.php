@@ -82,7 +82,7 @@ get_header();
             utile et j'en serais ravie !</p>
     </div>
 
-    <img src="<?php echo wp_get_attachment_url(41); ?>" alt="bannière de moi(s)" />
+    <img src="<?php echo wp_get_attachment_url(112); ?>" alt="bannière de moi(s)" />
 
     <div class="pb-[4rem]">
         <div class="">
