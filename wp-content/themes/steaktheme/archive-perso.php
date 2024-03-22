@@ -10,7 +10,7 @@
         <a href="https://www.instagram.com/steakosaure.png" target="_blank">
             <img class="md:w-[185px] shadowbulle" src="<?php echo wp_get_attachment_url(91); ?>" alt="icone behance" /></a>
         <div>
-            <p class="text-gris text-[2rem] font-Paytone md:text-[22px] sm:text-[1rem] z-40">Pendant mon temps perso je dessine c'est cadeau</p>
+            <p class="text-gris text-[2rem] font-Paytone md:text-[22px] sm:text-[1rem] z-40">Sélection de mes dessins favoris @steakosaure.png</p>
         </div>
     </div>
 </div>
