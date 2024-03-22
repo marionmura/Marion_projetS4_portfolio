@@ -1,40 +1,22 @@
 <?php
 get_header(); ?>
 
-<script>
-    // const nightModeBtn = document.getElementById('night-mode-btn');
-    // const body = document.body;
-    // const image = document.querySelector('.toggle-button img');
-
-    // nightModeBtn.addEventListener('click', () => {
-    //     body.classList.toggle('night-mode');
-    //     if (body.classList.contains('night-mode')) {
-    //         image.src = "<?php echo wp_get_attachment_url(22); ?>";
-    //     } else {
-    //         image.src = "<?php echo wp_get_attachment_url(23); ?>";
-    //     }
-    // });
-</script>
 
 <div class="">
 
     <div class="grid grid-cols-1 justify-items-center md:grid-cols-1 items-center gap-0 py-10 sm:mx-[2rem] md:mx-[2rem] mx-[12vw]">
         <div class="">
-            <img class="absolute z-[-1] w-[480px] left-[-100px] top-[50px] md:top-[0px] sm:w-[400px] sm:top-[-110px] sm:left-[-40px] "
-                src="<?php
-                echo wp_get_attachment_url(16); ?>" alt="cercle violet blur" />
-            <img class="absolute z-[-1] w-[250px] top-[320px] left-[200px] md:w-[200px] md:left-[150px] md:top-[380px] sm:w-[200px] sm:left-10 sm:top-[200px]"
-                src="<?php
-                echo wp_get_attachment_url(17); ?>" alt="cercle orange blur" />
-            <img class="absolute z-[-1] w-[240px] top-0 left-[180px] md:w-[200px] md:left-[200px] sm:w-[190px] sm:left-[190px] sm:top-[-70px] overflow-hidden"
-                src="<?php
-                echo wp_get_attachment_url(18); ?>" alt="cercle vert blur" />
+            <img class="absolute z-[-1] w-[480px] left-[-100px] top-[50px] md:top-[0px] sm:w-[400px] sm:top-[-110px] sm:left-[-40px] " src="<?php
+                                                                                                                                            echo wp_get_attachment_url(16); ?>" alt="cercle violet blur" />
+            <img class="absolute z-[-1] w-[250px] top-[320px] left-[200px] md:w-[200px] md:left-[150px] md:top-[380px] sm:w-[200px] sm:left-10 sm:top-[200px]" src="<?php
+                                                                                                                                                                    echo wp_get_attachment_url(17); ?>" alt="cercle orange blur" />
+            <img class="absolute z-[-1] w-[240px] top-0 left-[180px] md:w-[200px] md:left-[200px] sm:w-[190px] sm:left-[190px] sm:top-[-70px] overflow-hidden" src="<?php
+                                                                                                                                                                    echo wp_get_attachment_url(18); ?>" alt="cercle vert blur" />
         </div>
-        <div
-            class="z-40 grid grid-cols-2 md:grid-cols-1 gap-[2rem] justify-items-center items-center pt-[50px] md:py-[2rem]">
+        <div class="z-40 grid grid-cols-2 md:grid-cols-1 gap-[2rem] justify-items-center items-center pt-[50px] md:py-[2rem]">
 
             <img class="right-0 flex flex-end" src="<?php
-            echo wp_get_attachment_url(73); ?>" alt="banniere" />
+                                                    echo wp_get_attachment_url(73); ?>" alt="banniere" />
             <div>
                 <p class="home-h3  text-[2rem] md:text-[1.5rem] sm:text-[1rem]">Je suis Marion , graphiste et web
                     designeuse
@@ -46,13 +28,45 @@ get_header(); ?>
 
     <div class=" w-[100%]">
         <div class="arrow-down">
-            <img class="" src="<?php
-            echo wp_get_attachment_url(28); ?>" alt="double arrow" />
+            <img class="" src="<?php echo wp_get_attachment_url(28); ?>" alt="double arrow" />
         </div>
     </div>
 
 
-    <div class=" pt-[8rem]">
+    <div class="mx-4 pt-[8rem]">
+        <div>
+            <div class="grid grid-cols-2 items-baseline justify-center">
+                <h1 class="text-[5rem]">Design</h1>
+                <p>voir plus</p>
+            </div>
+            <span class="block w-full h-[2px] bg-gris"></span>
+        </div>
+
+        <div>
+            <h1 class="text-[5rem] text-transparent strokehomepage-motiondesign">Motion design</h1>
+            <span class="block w-full h-[2px] bg-gris hover:bg-violet "></span>
+        </div>
+
+        <div>
+            <h1 class="text-[5rem] text-transparent strokehomepage-webdesign">web design</h1>
+            <span class="block w-full h-[2px] bg-gris"></span>
+        </div>
+
+        <div>
+            <h1 class="text-[5rem] text-transparent strokehomepage-graphisme">Graphisme</h1>
+            <span class="block w-full h-[2px] bg-gris"></span>
+        </div>
+
+        <div>
+            <div class="grid grid-cols-2 items-baseline justify-center">
+                <h1 class="text-[5rem]">Dessin</h1>
+                <p>voir plus</p>
+            </div>
+            <span class="block w-full h-[2px] bg-gris"></span>
+        </div>
+
+
+        <!-- ancienne mise en page  
         <div
             class="flex flex-cols-2 justify-center gap-[5rem] md:grid md:grid-cols-1 md:gap-[1rem] mx-[5rem] lg:mx-[2rem] pb-[10rem] md:pb-[5rem]">
             <div class="w-[36rem] h-[25rem] md:w-[18rem] md:h-[15rem] bg-gris  rounded-lg"> </div>
@@ -105,7 +119,7 @@ get_header(); ?>
     <div class=" flex justify-center pb-[10rem] gap-5">
         <p class="text-[2rem] font-Paytone text-gris md:text-[20px]  ">PROJETS MMI</p>
         <img class="rotate-[-90deg] w-[30px]" src="<?php
-        echo wp_get_attachment_url(28); ?>" alt="double arrow" />
+                                                    echo wp_get_attachment_url(28); ?>" alt="double arrow" />
     </div>
 
     <div
@@ -125,9 +139,9 @@ get_header(); ?>
             <div class=" flex justify-center mt-[3rem] gap-5">
                 <p class="text-[25px] font-Paytone text-gris md:text-[20px]">MES PROJETS</p>
                 <img class="rotate-[-90deg] w-[30px]" src="<?php
-                echo wp_get_attachment_url(28); ?>" alt="double arrow" />
+                                                            echo wp_get_attachment_url(28); ?>" alt="double arrow" />
             </div>
-        </div>
+        </div> -->
     </div>
 
     <div class="bg-blanc-ivoir pb-10"></div>

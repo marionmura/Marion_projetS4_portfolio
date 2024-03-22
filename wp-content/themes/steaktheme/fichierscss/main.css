@@ -10,11 +10,39 @@
     width:auto;
     background-color: #F6F2EA;
  }
+
  
  h1, h2, h3, h4, h5, h6{
     font-family: 'Paytone One';
-    color: #0F1322;
+    color: #171c30;
  }
+
+ .strokehomepage-motiondesign, .strokehomepage-webdesign, .strokehomepage-graphisme  {
+   -webkit-text-stroke-width: 2px;
+   -webkit-text-stroke-color: #0F1322;
+ }
+
+ .strokehomepage-motiondesign:hover  {
+   -webkit-text-stroke-color: #ACB0FF;
+   color: #ACB0FF;
+   cursor:pointer;
+ }
+
+ .strokehomepage-webdesign:hover  {
+   -webkit-text-stroke-color: #FFDEAC;
+   color: #FFDEAC;
+   cursor:pointer;
+ }
+
+ .strokehomepage-graphisme:hover  {
+   -webkit-text-stroke-color: #FFACAC;
+   color: #FFACAC;
+   cursor:pointer;
+ }
+
+ p {
+   color: #171c30;
+}
  
  h2{
    font-size: 25px;
