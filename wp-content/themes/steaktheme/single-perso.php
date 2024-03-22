@@ -18,7 +18,7 @@
                 </div>
 
                 <div
-                    class="z-40 grid grid-cols-2 md:grid-cols-1 gap-[2rem] justify-items-center items-center pt-[50px] md:py-[2rem]">
+                    class="z-40 grid grid-cols-1 md:grid-cols-1 gap-[2rem] justify-items-center items-center pt-[50px] md:py-[2rem]">
                     <div>
                         <h1 class=" text-[4rem]  md:text-2xl sm:text-[2rem] pb-5">
                             <?php the_title(); ?>
@@ -27,11 +27,7 @@
                             <?php the_field('date_du_projet'); ?>
                         </h3>
                     </div>
-                    <div class="">
-                        <?php $term_image = get_field('photo'); ?>
-                        <?php the_post_thumbnail('thumbnail'); ?>
-                        <!-- image mise en avant servant de logo -->
-                    </div>
+                    
                 </div>
             </div>
 
@@ -45,13 +41,15 @@
                 <div class="grid grid-cols-2 md:grid-cols-1 gap-[2rem] sm:gap-[4rem]  mb-[4rem] items-start">
 
                     <div class="">
-                        <?php the_field('p_resume'); ?>
+                        <?php the_field('titre_galerie'); ?>
+                        <?php the_field('resume'); ?>
                     </div>
                     <div class="">
-                        <?php $image_id = get_field('logo_du_projet'); ?>
+                        <?php $image_id = get_field('img1'); ?>
                         <!-- // Récupérer l'ID de l'image -->
-
-                        <img class="w-[25rem]" src="<?php echo wp_get_attachment_url($image_id); ?>" alt="img" />
+                        <?php if ($image_id): ?>
+                            <img class="w-[25rem]" src="<?php echo wp_get_attachment_url($image_id); ?>" alt="img" />
+                        <?php endif; ?>
 
                     </div>
                 </div>

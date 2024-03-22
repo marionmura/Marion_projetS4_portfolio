@@ -50,9 +50,9 @@
                     <div class="">
                         <?php $image_id = get_field('logo_du_projet'); ?>
                         <!-- // Récupérer l'ID de l'image -->
-
+                        <?php if ($image_id): ?>
                         <img class="w-[25rem]" src="<?php echo wp_get_attachment_url($image_id); ?>" alt="img" />
-
+                        <?php endif; ?>
                     </div>
                 </div>
             </div>
@@ -143,7 +143,9 @@
 
                         <div class="pt-2 ">
                             <?php $image2_id = get_field('img1-h3'); ?>
-                            <img class="w-[25rem]" src="<?php echo wp_get_attachment_url($image2_id); ?>" alt="img" />
+                            <?php if ($image2_id): ?>
+                                <img class="w-[25rem]" src="<?php echo wp_get_attachment_url($image2_id); ?>" alt="img" />
+                            <?php endif; ?>
                         </div>
                     </div>
 
@@ -151,7 +153,9 @@
                         <?php the_field('p2-h3'); ?>
                         <div class="relative">
                             <?php $image3_id = get_field('img2-h3'); ?>
-                            <img class="w-[25rem]" src="<?php echo wp_get_attachment_url($image3_id); ?>" alt="img" />
+                            <?php if ($image3_id): ?>
+                                <img class="w-[25rem]" src="<?php echo wp_get_attachment_url($image3_id); ?>" alt="img" />
+                            <?php endif; ?>
                             <img class="w-[20rem] absolute z-[-1] left-[1rem] md:top-[12rem] sm:top-[8rem] top-[15rem]"
                                 src="<?php echo wp_get_attachment_url(19); ?>" alt="cercle rouge" />
                         </div>
@@ -166,8 +170,10 @@
                         <div class="grid grid-cols-1 gap-[2rem] justify-items-center">
                             <?php the_field('p-h3creation'); ?>
                             <div class="relative">
+                            <?php if ($image4_id): ?>
                                 <?php $image4_id = get_field('img-h3creation'); ?>
-                                <img class="w-[25rem]" src="<?php echo wp_get_attachment_url($image4_id); ?>" alt="img" />
+                                    <img class="w-[25rem]" src="<?php echo wp_get_attachment_url($image4_id); ?>" alt="img" />
+                                <?php endif; ?>
                                 <img class="w-[20rem] absolute z-[-1] left-[-10rem] sm:top-[5rem] top-[0rem]"
                                     src="<?php echo wp_get_attachment_url(18); ?>" alt="cercle vert" />
                             </div>
