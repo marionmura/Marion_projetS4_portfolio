@@ -34,37 +34,94 @@ get_header(); ?>
 
 
     <div class="mx-4 pt-[8rem]">
-        <div>
-            <div class="grid grid-cols-2 items-baseline justify-center">
-                <h1 class="text-[5rem]">Design</h1>
-                <p>voir plus</p>
+        <div class="grid justify-items-start mx-[4rem] md:mx-[2rem] sm:mx[1rem]">
+            <div class="grid grid-cols-2 gap-[12rem] items-baseline sm:justify-items-center">
+                <h1 class="text-[5rem] md:text-[3rem] justify-self-start">Design</h1>
+                <p class="justify-self-end">voir plus</p>
             </div>
-            <span class="block w-full h-[2px] bg-gris"></span>
+            <span class="block justify-items-center w-full h-[2px] bg-gris"></span>
         </div>
 
-        <div>
-            <h1 class="text-[5rem] text-transparent strokehomepage-motiondesign">Motion design</h1>
-            <span class="block w-full h-[2px] bg-gris hover:bg-violet "></span>
+        <div class="grid justify-items-start mx-[4rem] md:mx-[2rem] sm:mx[1rem]">
+            <h1 class="text-[5rem] grid  text-transparent strokehomepage-motiondesign md:text-[3rem]">Motion design</h1>
+            <span class="block justify-items-center w-full h-[2px] bg-gris"></span>
         </div>
 
-        <div>
-            <h1 class="text-[5rem] text-transparent strokehomepage-webdesign">web design</h1>
-            <span class="block w-full h-[2px] bg-gris"></span>
+        <div class="grid justify-items-start mx-[4rem] md:mx-[2rem] sm:mx[1rem]">
+            <h1 class="text-[5rem] grid text-transparent strokehomepage-webdesign md:text-[3rem]">Web design</h1>
+            <span class="block justify-items-center w-full  h-[2px] bg-gris"></span>
         </div>
 
-        <div>
-            <h1 class="text-[5rem] text-transparent strokehomepage-graphisme">Graphisme</h1>
-            <span class="block w-full h-[2px] bg-gris"></span>
+        <div class="grid justify-items-start mx-[4rem] md:mx-[2rem] sm:mx[1rem]">
+            <h1 class="text-[5rem] grid text-transparent strokehomepage-graphisme md:text-[3rem]">Graphisme</h1>
+            <span class="block justify-items-center w-full h-[2px] bg-gris"></span>
         </div>
 
-        <div>
-            <div class="grid grid-cols-2 items-baseline justify-center">
-                <h1 class="text-[5rem]">Dessin</h1>
-                <p>voir plus</p>
+
+        <div class="grid grid-cols-3 gap-2 m-2 md:grid md:grid-cols-1 my-[6rem]">
+            <?php 
+            $cat_taxonomie = 'articlemmi';
+            $args = array(
+                'showposts' => '3',
+                'tax_query' => array(
+                    array(
+                        'taxonomy' => $cat_taxonomie,
+                        'field'    => 'slug',
+                        'terms'    => array('animation','design')
+
+                    )
+                ),
+            );
+            $the_query = new WP_query($args);
+
+            if ($the_query->have_posts()) {
+                while ($the_query->have_posts()) {
+                    $the_query->the_post();
+                    echo '<a href="' . get_permalink() . '">';
+                    the_post_thumbnail('large');
+                    echo '</a>';
+                }
+            }
+            wp_reset_postdata();
+            ?>
+        </div>
+
+
+        <div class="grid justify-items-start mx-[4rem] md:mx-[2rem] sm:mx[1rem]">
+            <div class="grid grid-cols-2 gap-[12rem] items-baseline sm:justify-items-center">
+                <h1 class="text-[5rem] md:text-[3rem] justify-self-start">Dessin</h1>
+                <p class="justify-self-end">voir plus</p>
             </div>
-            <span class="block w-full h-[2px] bg-gris"></span>
+            <span class="block justify-items-center w-full h-[2px] bg-gris"></span>
         </div>
 
+        <div class="grid grid-cols-3 gap-2 m-2 md:grid md:grid-cols-1 my-[6rem]">
+            <?php 
+            $cat_taxonomie = 'perso';
+            $args = array(
+                'showposts' => '3',
+                'tax_query' => array(
+                    array(
+                        'taxonomy' => $cat_taxonomie,
+                        'field'    => 'slug',
+                        'terms'    => array('')
+
+                    )
+                ),
+            );
+            $the_query = new WP_query($args);
+
+            if ($the_query->have_posts()) {
+                while ($the_query->have_posts()) {
+                    $the_query->the_post();
+                    echo '<a href="' . get_permalink() . '">';
+                    the_post_thumbnail('large');
+                    echo '</a>';
+                }
+            }
+            wp_reset_postdata();
+            ?>
+        </div>
 
         <!-- ancienne mise en page  
         <div
