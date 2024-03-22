@@ -25,19 +25,16 @@
  .strokehomepage-motiondesign:hover  {
    -webkit-text-stroke-color: #ACB0FF;
    color: #ACB0FF;
-   cursor:pointer;
  }
 
  .strokehomepage-webdesign:hover  {
    -webkit-text-stroke-color: #FFDEAC;
    color: #FFDEAC;
-   cursor:pointer;
  }
 
  .strokehomepage-graphisme:hover  {
    -webkit-text-stroke-color: #FFACAC;
    color: #FFACAC;
-   cursor:pointer;
  }
 
  .portfoliostyle{

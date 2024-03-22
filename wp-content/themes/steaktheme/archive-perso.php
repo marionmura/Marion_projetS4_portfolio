@@ -17,7 +17,7 @@
 
 
 <div class="grid grid-cols-3 md:grid-cols-1 sm:grid-cols-1  gap-0 m-0 p-0">
-    <?php if (have_posts()) : ?>
+    <!-- <?php if (have_posts()) : ?>
         <?php while (have_posts()) :
                     the_post(); ?>
             // à ajouter dans article et div plus haut border border-gray-300 pour voir la grid 
@@ -36,21 +36,21 @@
             </article> // boucle pour récup tous les articles
             // on va mettre en triant par type d'articles visuellement - tout design puis tout animation puis tout ce qui reste s'il y a d'autre cat
         <?php endwhile; ?>
-    <?php endif; ?>
+    <?php endif; ?> -->
 
 
 
     <!-- afficher les articles sur l'animation -->
-    <!-- <?php echo '<br/>';
+    <?php echo '<br/>';
 
-    $cat_taxonomie = 'projetperso';
+    $cat_taxonomie = 'projetsperso';
     $args = array(
-        'showposts' => '6',
+        'showposts' => '3',
         'tax_query' => array(
             array(
                 'taxonomy' => $cat_taxonomie,
                 'field'    => 'slug',
-                'terms'    => array('')
+                'terms'    => array('pokemon')
 
             )
         ),
@@ -62,19 +62,20 @@
             $the_query->the_post();
             echo '<a href="' . get_permalink() . '">';
             the_post_thumbnail('large');
+            the_title();
             echo '</a>';
         }
     }
     wp_reset_postdata();
 
-    // afficher les articles sur le design
+    // afficher les articles sur mes bd
     $args2 = array(
-        'showposts' => '6',
+        'showposts' => '3',
         'tax_query' => array(
             array(
                 'taxonomy' => $cat_taxonomie,
                 'field'    => 'slug',
-                'terms'    => array('design')
+                'terms'    => array('bd')
 
             )
         ),
@@ -87,11 +88,13 @@
             $the_query2->the_post();
             echo '<a href="' . get_permalink() . '">';
             the_post_thumbnail('large');
+            the_title();
+
             echo '</a>';
         }
     }
     wp_reset_postdata();
-    ?> -->
+    ?>
 
 </div>
 

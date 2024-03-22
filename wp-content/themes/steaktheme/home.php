@@ -41,27 +41,29 @@ get_header(); ?>
 
 
     <div class="mx-4 pt-[8rem]">
-        <div class="grid justify-items-start mx-[12rem] md:mx-[2rem] sm:mx[1rem]">
-            <div class="grid grid-cols-2 gap-[12rem] items-baseline sm:justify-items-center">
-                <h1 class="text-[5rem] md:text-[3rem] justify-self-start">Design</h1>
-                <p class="justify-self-end">voir plus</p>
+        <div class="grid justify-items-start mx-[12rem] lg:mx-[8rem] md:mx-[2rem] sm:mx[1rem]">
+        <a href="https://marionmura.fr/mmi/">
+            <div class="grid grid-cols-2 gap-[20rem] lg:gap-[12rem] md:gap-[12rem] sm:gap-[2rem] items-baseline sm:justify-items-center">
+                <h1 class="text-[5rem] md:text-[3rem] sm:text-[40px]  justify-self-start">Design</h1>
+                <p class="text-[20px] sm:text-[16px] justify-self-end">voir plus</p>
             </div>
-            <span class="block justify-items-center w-full h-[2px] mt-[-20px] bg-gris"></span>
+        </a>
+            <span class="block justify-items-center w-[85%] lg:w-[100%] h-[2px] mt-[-20px] md:mt-[-5px] bg-gris"></span>
         </div>
 
-        <div class="grid justify-items-start mx-[12rem] md:mx-[2rem] sm:mx[1rem]">
-            <h1 class="text-[5rem] grid  text-transparent strokehomepage-motiondesign md:text-[3rem]">Motion design</h1>
-            <span class="block justify-items-center w-full h-[2px] mt-[-20px] bg-gris"></span>
+        <div class="grid justify-items-start mx-[12rem] lg:mx-[8rem] md:mx-[2rem] sm:mx[1rem]">
+            <h1 class="text-[5rem] text-transparent strokehomepage-motiondesign sm:text-[40px] md:text-[3rem]">Motion design</h1>
+            <span class="block justify-items-center w-[85%] lg:w-full h-[2px] mt-[-20px] md:mt-[-5px] bg-gris"></span>
         </div>
 
-        <div class="grid justify-items-start mx-[12rem] md:mx-[2rem] sm:mx[1rem]">
-            <h1 class="text-[5rem] grid text-transparent strokehomepage-webdesign md:text-[3rem]">Web design</h1>
-            <span class="block justify-items-center w-full  h-[2px] mt-[-20px] bg-gris"></span>
+        <div class="grid justify-items-start mx-[12rem] lg:mx-[8rem] md:mx-[2rem] sm:mx[1rem]">
+            <h1 class="text-[5rem] grid text-transparent strokehomepage-webdesign sm:text-[40px] md:text-[3rem]">Web design</h1>
+            <span class="block justify-items-center w-[85%] lg:w-full  h-[2px] mt-[-20px] md:mt-[-5px] bg-gris"></span>
         </div>
 
-        <div class="grid justify-items-start mx-[12rem] md:mx-[2rem] sm:mx[1rem]">
-            <h1 class="text-[5rem] grid text-transparent strokehomepage-graphisme md:text-[3rem]">Graphisme</h1>
-            <span class="block justify-items-center w-full h-[2px] mt-[-20px] bg-gris"></span>
+        <div class="grid justify-items-start mx-[12rem] lg:mx-[8rem] md:mx-[2rem] sm:mx[1rem]">
+            <h1 class="text-[5rem] grid text-transparent strokehomepage-graphisme sm:text-[40px] md:text-[3rem]">Graphisme</h1>
+            <span class="block justify-items-center w-[85%] lg:w-full h-[2px] mt-[-20px] md:mt-[-5px] bg-gris"></span>
         </div>
 
 
@@ -94,24 +96,26 @@ get_header(); ?>
         </div>
 
 
-        <div class="grid justify-items-start mx-[12rem] md:mx-[2rem] sm:mx[1rem]">
-            <div class="grid grid-cols-2 gap-[12rem] items-baseline sm:justify-items-center">
-                <h1 class="text-[5rem] md:text-[3rem] justify-self-start">Dessin</h1>
-                <p class="justify-self-end">voir plus</p>
+        <div class="grid justify-items-start mx-[12rem] lg:mx-[8rem] md:mx-[2rem] sm:mx[1rem]">
+        <a href="https://marionmura.fr/perso/">
+            <div class="grid grid-cols-2 gap-[20rem] lg:gap-[14rem] md:gap-[12rem] sm:gap-[2rem] items-baseline sm:justify-items-center">
+                <h1 class="text-[5rem] md:text-[3rem] sm:text-[40px] justify-self-start">Dessin</h1>
+                <p class="text-[20px] sm:text-[16px] justify-self-end">voir plus</p>
             </div>
-            <span class="block justify-items-center w-full h-[2px] mt-[-20px] bg-gris"></span>
+        </a>
+            <span class="block justify-items-center w-[85%] lg:w-full h-[2px] mt-[-20px] md:mt-[-5px] bg-gris"></span>
         </div>
 
         <div class="grid grid-cols-3 gap-2 m-2 md:grid md:grid-cols-1 my-[6rem]">
             <?php
-            $cat_taxonomie = 'perso';
+            $cat_taxonomie = 'projetsperso';
             $args = array(
                 'showposts' => '3',
                 'tax_query' => array(
                     array(
                         'taxonomy' => $cat_taxonomie,
                         'field'    => 'slug',
-                        'terms'    => array('')
+                        'terms'    => array('pokemon', 'bd', 'challenges')
 
                     )
                 ),
