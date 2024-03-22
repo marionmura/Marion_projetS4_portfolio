@@ -23,11 +23,11 @@ get_header(); ?>
                 </div>
             </div> -->
         <div class="grid grid-cols-1 justify-items-center mb-[10rem]">
-            <h1 class="grid grid-cols-1 mx-[4rem] sm:[mx-2rem] justify-items-center absolute text-[8rem] top-[370px] text-[#892dff] portfoliostyle md:text-[4rem] sm:text-[2rem]">MARION MURA</h1>
+            <h1 class="grid grid-cols-1 justify-items-center absolute mx-[4rem] md:mx-[2rem] sm:mx-[1rem] lg:mx-[8rem]  text-[8rem] top-[372px] lg:top-[355px] md:top-[427px] sm:top-[427px] text-[#892dff] portfoliostyle lg:text-[60px] md:text-[4rem] sm:text-[2rem]">MARION MURA</h1>
             <img class="w-max lg:top-[150px] block md:hidden md:w-0 filter-gris" src="<?php echo wp_get_attachment_url(112); ?>" alt="banniere" />
             <img class="hidden md:block filter-gris" src="<?php echo wp_get_attachment_url(73); ?>" alt="banniere" />
             <div class="glassmorphisme p-5 px-5 top-[150px] relative">
-                <h1 class="text-[8rem] md:text-[4rem] sm:text-[2rem] text-transparent portfoliostyle">MARION MURA</h1>
+                <h1 class="text-[8rem]  lg:text-[60px] md:text-[4rem] sm:text-[2rem] text-transparent portfoliostyle">MARION MURA</h1>
             </div>
             
         </div>
