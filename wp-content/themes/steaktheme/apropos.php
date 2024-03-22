@@ -14,7 +14,7 @@ get_header();
             <img class="absolute z-[-1] w-[250px] top-[320px] left-[200px] md:w-[200px] md:left-[150px] md:top-[380px] sm:w-[200px] sm:left-10 sm:top-[200px]"
                 src="<?php
                 echo wp_get_attachment_url(17); ?>" alt="cercle orange blur" />
-            <img class="absolute z-[-1] w-[240px] top-0 left-[180px] md:w-[200px] md:left-[200px] sm:w-[190px] sm:left-[190px] sm:top-[-70px] overflow-hidden"
+            <img class="absolute z-[-1] w-[240px] top-0 left-[180px] md:w-[200px] md:left-[200px] sm:w-[180px] sm:left-[190px] sm:top-[-70px] overflow-hidden"
                 src="<?php
                 echo wp_get_attachment_url(18); ?>" alt="cercle vert blur" />
         </div>
@@ -28,7 +28,7 @@ get_header();
         </div>
     </div>
 
-    <div class=" w-[100%]">
+    <div class="mt-0 w-[100%]">
         <div class="arrow-down">
             <img class="" src="<?php
             echo wp_get_attachment_url(28); ?>" alt="double arrow" />
@@ -99,7 +99,7 @@ get_header();
                     <img class="" src="<?php
                     echo wp_get_attachment_url(34); ?>" alt="icone linkedin" /></a>
             </div>
-            <p class="text-[18px] font-Paytone text-center">Retrouvez mon travail sur les réseaux sociaux !</p>
+            <p class="text-[18px] sm:mx-[2rem] font-Paytone text-center">Retrouvez mon travail sur les réseaux sociaux !</p>
         </div>
     </div>
 </div>

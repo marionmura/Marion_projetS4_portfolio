@@ -8,7 +8,7 @@ get_header(); ?>
         <div class="">
             <img class="absolute z-[-1] w-[480px] left-[-100px] top-[50px] md:top-[0px] sm:w-[400px] sm:top-[-110px] sm:left-[-40px] " src="<?php echo wp_get_attachment_url(16); ?>" alt="cercle violet blur" />
             <img class="absolute z-[-1] w-[250px] top-[320px] left-[200px] md:w-[200px] md:left-[150px] md:top-[380px] sm:w-[200px] sm:left-10 sm:top-[200px]" src="<?php echo wp_get_attachment_url(17); ?>" alt="cercle orange blur" />
-            <img class="absolute z-[-1] w-[240px] top-0 left-[180px] md:w-[200px] md:left-[200px] sm:w-[190px] sm:left-[190px] sm:top-[-70px] overflow-hidden" src="<?php echo wp_get_attachment_url(18); ?>" alt="cercle vert blur" />
+            <img class="absolute z-[-1] w-[240px] top-0 left-[180px] md:w-[200px] md:left-[200px] sm:w-[180px] sm:left-[190px] sm:top-[-70px] overflow-hidden" src="<?php echo wp_get_attachment_url(18); ?>" alt="cercle vert blur" />
         </div>
         <!-- <div class="z-40 grid grid-cols-2 md:grid-cols-1 gap-[2rem] justify-items-center items-center pt-[50px] md:py-[2rem]">
 
@@ -23,14 +23,17 @@ get_header(); ?>
                 </div>
             </div> -->
         <div class="grid grid-cols-1 justify-items-center mb-[10rem]">
-            <img class="w-max filter-gris" src="<?php echo wp_get_attachment_url(112); ?>" alt="banniere" />
-            <div class="glassmorphisme p-5 px-5">
-                <h1 class="text-[8rem]">PORTFOLIO</h1>
+            <h1 class="grid grid-cols-1 mx-[4rem] sm:[mx-2rem] justify-items-center absolute text-[8rem] top-[370px] text-[#892dff] portfoliostyle md:text-[4rem] sm:text-[2rem]">MARION MURA</h1>
+            <img class="w-max lg:top-[150px] block md:hidden md:w-0 filter-gris" src="<?php echo wp_get_attachment_url(112); ?>" alt="banniere" />
+            <img class="hidden md:block filter-gris" src="<?php echo wp_get_attachment_url(73); ?>" alt="banniere" />
+            <div class="glassmorphisme p-5 px-5 top-[150px] relative">
+                <h1 class="text-[8rem] md:text-[4rem] sm:text-[2rem] text-transparent portfoliostyle">MARION MURA</h1>
             </div>
+            
         </div>
     </div>
 
-    <div class=" w-[100%]">
+    <div class="pt-[100px] b-0 w-[100%]">
         <div class="arrow-down">
             <img class="" src="<?php echo wp_get_attachment_url(28); ?>" alt="double arrow" />
         </div>

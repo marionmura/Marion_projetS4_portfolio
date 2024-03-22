@@ -10,7 +10,7 @@ get_header(); ?>
             <img class="absolute w-[250px] top-[320px] left-[200px] md:w-[200px] md:left-[150px] md:top-[380px] sm:w-[200px] sm:left-10 sm:top-[200px]"
                 src="<?php
                 echo wp_get_attachment_url(16); ?>" alt="cercle orange blur" />
-            <img class="absolute w-[240px] top-0 left-[180px] md:w-[200px] md:left-[200px] sm:w-[190px] sm:left-[190px] sm:top-[-70px] overflow-hidden"
+            <img class="absolute w-[240px] top-0 left-[180px] md:w-[200px] md:left-[200px] sm:w-[190px] sm:left-[180px] sm:top-[-70px] overflow-hidden"
                 src="<?php
                 echo wp_get_attachment_url(19); ?>" alt="cercle rouge blur" />
         </div>

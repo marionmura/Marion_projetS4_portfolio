@@ -40,6 +40,18 @@
    cursor:pointer;
  }
 
+ .portfoliostyle{
+   -webkit-text-stroke-width: 3px;
+   -webkit-text-stroke-color: #892DFF;
+ }
+
+/* Style pour les écrans de petite taille (mobile) */
+@media only screen and (max-width: 600px) {
+   .portfoliostyle {
+      -webkit-text-stroke-width: 1.5px; /* Ajustez l'épaisseur du trait pour les petits écrans */
+   }
+ }
+
  p {
    color: #171c30;
 }

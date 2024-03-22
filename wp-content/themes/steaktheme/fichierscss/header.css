@@ -31,12 +31,13 @@
     margin-right:10px;
 }
 
+
 .md\:header-mobileul > div > ul {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   justify-content: flex-end;
   justify-items: flex-end; /* item alignés par la fin en mobile et tablette */
-  gap: 30px;
+  gap: 10px;
   margin-right: 10px;
 }
 
@@ -47,9 +48,6 @@ header a{
     color: #171C30;
     text-decoration: none;
  }
-
-
-
 
 .grid-header{
     display: grid;
