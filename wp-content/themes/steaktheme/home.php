@@ -78,7 +78,7 @@ get_header(); ?>
                     array(
                         'taxonomy' => $cat_taxonomie,
                         'field'    => 'slug',
-                        'terms'    => array('animation', 'design')
+                        'terms'    => array('animation', 'design', 'graphisme')
 
                     )
                 ),
@@ -126,7 +126,7 @@ get_header(); ?>
                     array(
                         'taxonomy' => $cat_taxonomie,
                         'field'    => 'slug',
-                        'terms'    => array('pokemon', 'bd', 'challenges')
+                        'terms'    => array('pokemon', 'sky', 'bd', 'challenges')
 
                     )
                 ),
