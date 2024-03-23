@@ -1,24 +1,20 @@
 <?php get_header(); ?>
-<?php if (have_posts()): ?>
+<?php if (have_posts()) : ?>
 
-    <?php while (have_posts()):
+    <?php while (have_posts()) :
         the_post(); ?>
         <article class="text-gris sm:mx-[2rem] md:mx-[2rem] mx-[12vw]">
             <div class="grid grid-cols-1 justify-items-center md:grid-cols-1 items-center gap-0 py-10">
                 <div class="">
-                    <img class="absolute z-[-1] w-[480px] left-[-100px] top-[50px] md:top-[0px] sm:w-[400px] sm:top-[-110px] sm:left-[-40px] "
-                        src="<?php
-                        echo wp_get_attachment_url(16); ?>" alt="cercle violet blur" />
-                    <img class="absolute z-[-1] w-[250px] top-[320px] left-[200px] md:w-[200px] md:left-[150px] md:top-[380px] sm:w-[200px] sm:left-10 sm:top-[200px]"
-                        src="<?php
-                        echo wp_get_attachment_url(18); ?>" alt="cercle orange blur" />
-                    <img class="absolute z-[-1] w-[240px] top-0 left-[180px] md:w-[200px] md:left-[200px] sm:w-[190px] sm:left-[190px] sm:top-[-70px] overflow-hidden"
-                        src="<?php
-                        echo wp_get_attachment_url(17); ?>" alt="cercle vert blur" />
+                    <img class="absolute z-[-1] w-[480px] left-[-100px] top-[50px] md:top-[0px] sm:w-[400px] sm:top-[-110px] sm:left-[-40px] " src="<?php
+                                                                                                                                                    echo wp_get_attachment_url(16); ?>" alt="cercle violet blur" />
+                    <img class="absolute z-[-1] w-[250px] top-[320px] left-[200px] md:w-[200px] md:left-[150px] md:top-[380px] sm:w-[200px] sm:left-10 sm:top-[200px]" src="<?php
+                                                                                                                                                                            echo wp_get_attachment_url(18); ?>" alt="cercle orange blur" />
+                    <img class="absolute z-[-1] w-[240px] top-0 left-[180px] md:w-[200px] md:left-[200px] sm:w-[190px] sm:left-[190px] sm:top-[-70px] overflow-hidden" src="<?php
+                                                                                                                                                                            echo wp_get_attachment_url(17); ?>" alt="cercle vert blur" />
                 </div>
 
-                <div
-                    class="z-40 grid grid-cols-2 md:grid-cols-1 gap-[2rem] justify-items-center items-center pt-[50px] md:py-[2rem]">
+                <div class="z-40 grid grid-cols-2 lg:grid-cols-1 gap-[2rem] justify-items-center items-center pt-[50px] md:py-[2rem]">
                     <div>
                         <h1 class=" text-[4rem]  md:text-2xl sm:text-[2rem] pb-5">
                             <?php the_title(); ?>
@@ -50,8 +46,8 @@
                     <div class="">
                         <?php $image_id = get_field('logo_du_projet'); ?>
                         <!-- // Récupérer l'ID de l'image -->
-                        <?php if ($image_id): ?>
-                        <img class="w-[25rem]" src="<?php echo wp_get_attachment_url($image_id); ?>" alt="img" />
+                        <?php if ($image_id) : ?>
+                            <img class="w-[25rem]" src="<?php echo wp_get_attachment_url($image_id); ?>" alt="img" />
                         <?php endif; ?>
                     </div>
                 </div>
@@ -73,14 +69,14 @@
 
                     //Récupérer les termes associés à l'article que si cest une taxonomie
                     // $terms = get_the_terms(get_the_ID(), 'logiciels');
-            
+
                     // if ($terms && !is_wp_error($terms)) {
                     //     foreach ($terms as $term) {
                     //         // Vérifier le nom du terme (logiciel) et afficher l'icône correspondante
                     //         if ($term->name === 'Pinterest') {
                     //             // Afficher l'icône pour Illustrator (ajustez le chemin de l'image en conséquence)
                     //             $image_url = wp_get_attachment_image_url(36, 'thumbnail');
-            
+
                     //             echo '<img src="' . esc_url($image_url) . '" alt="Pinterest Icon">';
                     //         } elseif ($term->name === 'Figma') {
                     //             // Afficher l'icône pour Figma (ajustez le chemin de l'image en conséquence)
@@ -90,15 +86,14 @@
                     //         // Ajoutez d'autres conditions pour d'autres logiciels si nécessaire
                     //     }
                     // }
-            
+
 
                     $logiciels = get_post_meta(get_the_ID(), 'logiciels', true);
 
-                    foreach ($logiciels as $logiciel_icon)//on passe en revu tout le contenu du tableau $logiciels
-			        {   
+                    foreach ($logiciels as $logiciel_icon) //on passe en revu tout le contenu du tableau $logiciels
+                    {
                         //pour chaque element on determine l image à afficher
-                        switch($logiciel_icon)
-                        {
+                        switch ($logiciel_icon) {
                             case 'Adobe Photoshop':
                                 echo '<img src="' . esc_url(wp_get_attachment_image_url(84, 'thumbnail')) . '" alt="Photoshop Icon">';
                                 break;
@@ -110,7 +105,7 @@
                                 break;
                             case 'After Effect':
                                 echo '<img class="w-[50px]" src="' . esc_url(wp_get_attachment_image_url(78, 'thumbnail')) . '" alt="After Effect Icon">';
-                                break;            
+                                break;
                             case 'Figma':
                                 echo '<img src="' . esc_url(wp_get_attachment_image_url(82, 'thumbnail')) . '" alt="Figma Icon">';
                                 break;
@@ -120,12 +115,12 @@
                             case 'Crayon':
                                 echo '<img class="w-[50px]" src="' . esc_url(wp_get_attachment_image_url(85, 'thumbnail')) . '" alt="Crayon Icon">';
                                 break;
-                            default://si l element ne correspond à aucun autre on peut lui attribuer une image par defaut
-                                echo '<img src="URL_LOGICIEL_INCONNU_A_COMPLETER.png" alt="'. $logiciel_icon .' Icon">';
+                            default: //si l element ne correspond à aucun autre on peut lui attribuer une image par defaut
+                                echo '<img src="URL_LOGICIEL_INCONNU_A_COMPLETER.png" alt="' . $logiciel_icon . ' Icon">';
                         }
                     }
                     ?>
-                    
+
                 </div>
             </div>
 
@@ -143,7 +138,7 @@
 
                         <div class="pt-2 ">
                             <?php $image2_id = get_field('img1-h3'); ?>
-                            <?php if ($image2_id): ?>
+                            <?php if ($image2_id) : ?>
                                 <img class="w-[25rem]" src="<?php echo wp_get_attachment_url($image2_id); ?>" alt="img" />
                             <?php endif; ?>
                         </div>
@@ -153,7 +148,7 @@
                         <?php the_field('p2-h3'); ?>
                         <div class="relative">
                             <?php $image3_id = get_field('img2-h3'); ?>
-                            <?php if ($image3_id): ?>
+                            <?php if ($image3_id) : ?>
                                 <img class="w-[25rem]" src="<?php echo wp_get_attachment_url($image3_id); ?>" alt="img" />
                             <?php endif; ?>
                             <!-- <img class="w-[20rem] absolute z-[-1] left-[1rem] md:top-[12rem] sm:top-[8rem] top-[15rem]"
@@ -170,8 +165,8 @@
                         <div class="grid grid-cols-1 gap-[2rem] justify-items-center">
                             <?php the_field('p-h3creation'); ?>
                             <div class="relative">
-                            <?php $image4_id = get_field('img-h3creation'); ?>
-                            <?php if ($image4_id): ?>
+                                <?php $image4_id = get_field('img-h3creation'); ?>
+                                <?php if ($image4_id) : ?>
                                     <img class="w-[25rem]" src="<?php echo wp_get_attachment_url($image4_id); ?>" alt="img" />
                                 <?php endif; ?>
                                 <!-- <img class="w-[18rem] absolute z-[-1] left-[-10rem] sm:top-[5rem] top-[0rem]"
@@ -203,13 +198,18 @@
                                 <!-- <a href="<?php the_field('behance'); ?>">Behance</a>-->
                             </div>
                         </div>
-                    </div>
 
+                        <div class="justify-self-start pt-6">
+                            <a href="https://www.marionmura.fr/mmi/">
+                                <div class="grid-back">
+                                    <img class="w-[15px]" src="<?php echo wp_get_attachment_url(181); ?>" alt="img" />
+                                    <p class="font-bold">Retour aux projets</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            </div>
-
         </article>
     <?php endwhile; ?>
 <?php endif; ?>
