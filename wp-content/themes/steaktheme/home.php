@@ -67,7 +67,7 @@ get_header(); ?>
         </div>
 
 
-        <div class="grid grid-cols-3 gap-2 m-2 md:grid md:grid-cols-1 my-[6rem]">
+        <div class="grid grid-cols-3 gap-2 m-2 md:grid-cols-2 sm:grid-cols-1 my-[6rem] mx-[8rem] lg:mx-[6rem] md:mx-[2rem] sm:mx[1rem]">
             <?php
             $cat_taxonomie = 'articlemmi';
             $args = array(
@@ -86,13 +86,22 @@ get_header(); ?>
             if ($the_query->have_posts()) {
                 while ($the_query->have_posts()) {
                     $the_query->the_post();
-                    echo '<a href="' . get_permalink() . '">';
+                    echo '<a href="' . get_permalink() . '">
+                <div class="grid grid-cols-1 gap-2">';
                     the_post_thumbnail('large');
-                    echo '</a>';
+                    echo '<div class=""><h3>';
+                    the_title();
+                    echo '</h3>
+                
+                <p class="py-1 ">';
+                    the_field('date_du_projet');
+                    echo '</p></div>
+                </div>
+                </a>';
                 }
             }
-            wp_reset_postdata();
-            ?>
+            wp_reset_postdata(); ?>
+            
         </div>
 
 
@@ -106,7 +115,7 @@ get_header(); ?>
             <span class="block justify-items-center w-[85%] lg:w-full h-[2px] mt-[-20px] md:mt-[-5px] bg-gris"></span>
         </div>
 
-        <div class="grid grid-cols-3 gap-2 m-2 md:grid md:grid-cols-1 my-[6rem]">
+        <div class="grid grid-cols-3 gap-2 m-2 md:grid-cols-2 sm:grid-cols-1 my-[6rem] mx-[8rem] lg:mx-[6rem] md:mx-[2rem] sm:mx[1rem]">
             <?php
             $cat_taxonomie = 'projetsperso';
             $args = array(
@@ -125,13 +134,21 @@ get_header(); ?>
             if ($the_query->have_posts()) {
                 while ($the_query->have_posts()) {
                     $the_query->the_post();
-                    echo '<a href="' . get_permalink() . '">';
+                    echo '<a href="' . get_permalink() . '">
+                <div class="grid grid-cols-1 gap-2">';
                     the_post_thumbnail('large');
-                    echo '</a>';
+                    echo '<div class=""><h3>';
+                    the_title();
+                    echo '</h3>
+                
+                <p class="py-1 ">';
+                    the_field('datep');
+                    echo '</p></div>
+                </div>
+                </a>';
                 }
             }
-            wp_reset_postdata();
-            ?>
+            wp_reset_postdata(); ?>
         </div>
 
         <!-- ancienne mise en page  

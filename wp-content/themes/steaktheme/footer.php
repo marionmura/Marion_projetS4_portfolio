@@ -1,8 +1,8 @@
 <footer>
-  <div class="grid grid-cols-2 justify-items-center items-center ">
-    <div class="flex flex-row items-center">
+  <div class="grid grid-cols-2 md:grid-cols-1 justify-items-center items-center ">
+    <div class="grid grid-cols-2 md:grid-cols-1 items-center">
     <img class="w-[80px] m-5" src="<?php echo get_template_directory_uri(); ?>/favicon.svg" alt="logo" />
-    <h1 class="text-blanc">Contactez moi !</h1>
+    <h1 class="text-blanc md:pb-8">Contactez moi !</h1>
     </div>
     <!-- <nav class="grid grid-cols-2">
       <?php wp_nav_menu(array(  'theme_location' => 'footer-menu'  )); ?></nav> -->

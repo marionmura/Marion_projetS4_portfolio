@@ -626,10 +626,6 @@ video {
   top: 8rem;
 }
 
-.z-0 {
-  z-index: 0;
-}
-
 .z-40 {
   z-index: 40;
 }
@@ -663,11 +659,6 @@ video {
 .mx-\[12vw\] {
   margin-left: 12vw;
   margin-right: 12vw;
-}
-
-.mx-\[15rem\] {
-  margin-left: 15rem;
-  margin-right: 15rem;
 }
 
 .mx-\[20vw\] {
@@ -826,6 +817,10 @@ video {
   height: 2px;
 }
 
+.h-\[30px\] {
+  height: 30px;
+}
+
 .h-\[35rem\] {
   height: 35rem;
 }
@@ -838,20 +833,16 @@ video {
   height: 40px;
 }
 
+.h-\[4rem\] {
+  height: 4rem;
+}
+
 .h-\[50rem\] {
   height: 50rem;
 }
 
 .h-\[59px\] {
   height: 59px;
-}
-
-.h-\[20px\] {
-  height: 20px;
-}
-
-.h-\[30px\] {
-  height: 30px;
 }
 
 .w-0 {
@@ -918,6 +909,10 @@ video {
   width: 50px;
 }
 
+.w-\[80px\] {
+  width: 80px;
+}
+
 .w-\[85\%\] {
   width: 85%;
 }
@@ -929,14 +924,6 @@ video {
 .w-max {
   width: -moz-max-content;
   width: max-content;
-}
-
-.w-\[100px\] {
-  width: 100px;
-}
-
-.w-\[80px\] {
-  width: 80px;
 }
 
 .rotate-\[-90deg\] {
@@ -966,10 +953,6 @@ video {
 
 .grid-rows-3 {
   grid-template-rows: repeat(3, minmax(0, 1fr));
-}
-
-.flex-row {
-  flex-direction: row;
 }
 
 .flex-row-reverse {
@@ -1106,6 +1089,11 @@ video {
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 
 .py-10 {
@@ -1263,6 +1251,11 @@ video {
   color: rgb(137 45 255 / var(--tw-text-opacity));
 }
 
+.text-blanc {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .text-gris {
   --tw-text-opacity: 1;
   color: rgb(23 28 48 / var(--tw-text-opacity));
@@ -1270,11 +1263,6 @@ video {
 
 .text-transparent {
   color: transparent;
-}
-
-.text-blanc {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .blur {
@@ -1529,6 +1517,10 @@ video {
     padding-bottom: 5rem;
   }
 
+  .md\:pb-8 {
+    padding-bottom: 2rem;
+  }
+
   .md\:text-2xl {
     font-size: 3rem;
   }
@@ -1565,10 +1557,6 @@ video {
 
   .sm\:left-\[-40px\] {
     left: -40px;
-  }
-
-  .sm\:left-\[180px\] {
-    left: 180px;
   }
 
   .sm\:left-\[190px\] {
@@ -1664,6 +1652,10 @@ video {
 
   .sm\:gap-\[4rem\] {
     gap: 4rem;
+  }
+
+  .sm\:pb-8 {
+    padding-bottom: 2rem;
   }
 
   .sm\:pb-\[5rem\] {
