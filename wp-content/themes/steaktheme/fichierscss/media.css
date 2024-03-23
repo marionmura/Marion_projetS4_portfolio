@@ -49,6 +49,18 @@
   filter:none;
 }
 
+.filter-gris2{
+  content:"";
+  /* top:150px; */
+  width:100%;
+  background-size: cover;
+  filter:grayscale(100%);
+  transition:0.35s;
+}
+.filter-gris2:hover{
+  filter:none;  
+}
+
 .glassmorphisme{
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.15);
