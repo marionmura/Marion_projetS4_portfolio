@@ -16,85 +16,183 @@
 </div>
 
 
-<div class="grid grid-cols-3 md:grid-cols-1 sm:grid-cols-1  gap-0 m-0 p-0">
-    <!-- <?php if (have_posts()) : ?>
-        <?php while (have_posts()) :
-                    the_post(); ?>
-            // à ajouter dans article et div plus haut border border-gray-300 pour voir la grid 
-            <article class=" ">
-                <a href="<?php the_permalink(); ?>">
-                    <?php the_post_thumbnail('large'); ?> </a>
-                <div class="">
-                    <h3 class="title">
-                        
-                            <?php the_title(); ?>
-                    </h3>
-                    <p class="description">voir le projet</p>
-                    
+<div class="">
+     <div class="grid justify-items-start mx-[12rem] lg:mx-[8rem] md:mx-[2rem] sm:mx[1rem] py-[4rem]">
+        <h1 class="text-[5rem] grid text-transparent strokehomepage-graphisme sm:text-[40px] md:text-[3rem]">Challenges</h1>
+    </div>
 
-                </div> 
-            </article> // boucle pour récup tous les articles
-            // on va mettre en triant par type d'articles visuellement - tout design puis tout animation puis tout ce qui reste s'il y a d'autre cat
-        <?php endwhile; ?>
-    <?php endif; ?> -->
+    <div class="grid grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-2 mx-[8rem] lg:mx-[6rem] md:mx-[2rem] sm:mx[1rem] pb-[4rem]">
+        <!-- afficher mes challenges ! -->
+        <?php
+
+        $cat_taxonomie = 'projetsperso';
+        $args = array(
+            'showposts' => '6',
+            'tax_query' => array(
+                array(
+                    'taxonomy' => $cat_taxonomie,
+                    'field'    => 'slug',
+                    'terms'    => array('challenges')
+
+                )
+            ),
+        );
+        $the_query = new WP_query($args);
+
+        if ($the_query->have_posts()) {
+            while ($the_query->have_posts()) {
+                $the_query->the_post();
+                echo '<a href="' . get_permalink() . '">
+            <div class="grid grid-cols-1 gap-2">';
+                the_post_thumbnail('large');
+                echo '<div class=""><h3>';
+                the_title();
 
 
-
-    <!-- afficher les articles sur l'animation -->
-    <?php echo '<br/>';
-
-    $cat_taxonomie = 'projetsperso';
-    $args = array(
-        'showposts' => '3',
-        'tax_query' => array(
-            array(
-                'taxonomy' => $cat_taxonomie,
-                'field'    => 'slug',
-                'terms'    => array('pokemon')
-
-            )
-        ),
-    );
-    $the_query = new WP_query($args);
-
-    if ($the_query->have_posts()) {
-        while ($the_query->have_posts()) {
-            $the_query->the_post();
-            echo '<a href="' . get_permalink() . '">';
-            the_post_thumbnail('large');
-            the_title();
-            echo '</a>';
+                echo '</h3>
+            <span class="block justify-items-center w-[100%] h-[2px]  bg-gris"></span>
+            <p class="py-2 pb-2">';
+                the_field('datep');
+                echo '</p></div>
+            </div>
+            </a>';
+            }
         }
-    }
-    wp_reset_postdata();
+        wp_reset_postdata(); ?>
+    </div>
 
-    // afficher les articles sur mes bd
-    $args2 = array(
-        'showposts' => '3',
-        'tax_query' => array(
-            array(
-                'taxonomy' => $cat_taxonomie,
-                'field'    => 'slug',
-                'terms'    => array('bd')
+    <div class="grid justify-items-start mx-[12rem] lg:mx-[8rem] md:mx-[2rem] sm:mx[1rem] py-[4rem]">
+        <h1 class="text-[5rem] grid text-transparent strokehomepage-webdesign sm:text-[40px] md:text-[3rem]">BD</h1>
+    </div>
 
-            )
-        ),
-    );
+    <div class="grid grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-2 mx-[8rem] lg:mx-[6rem] md:mx-[2rem] sm:mx[1rem] pb-[4rem]">
+        <!-- afficher process sur ma petite BD -->
+        <?php
 
-    $the_query2 = new WP_query($args2);
+        $cat_taxonomie = 'projetsperso';
+        $args = array(
+            'showposts' => '6',
+            'tax_query' => array(
+                array(
+                    'taxonomy' => $cat_taxonomie,
+                    'field'    => 'slug',
+                    'terms'    => array('BD')
 
-    if ($the_query2->have_posts()) {
-        while ($the_query2->have_posts()) {
-            $the_query2->the_post();
-            echo '<a href="' . get_permalink() . '">';
-            the_post_thumbnail('large');
-            the_title();
+                )
+            ),
+        );
+        $the_query = new WP_query($args);
 
-            echo '</a>';
+        if ($the_query->have_posts()) {
+            while ($the_query->have_posts()) {
+                $the_query->the_post();
+                echo '<a href="' . get_permalink() . '">
+            <div class="grid grid-cols-1 gap-2">';
+                the_post_thumbnail('large');
+                echo '<div class=""><h3>';
+                the_title();
+
+
+                echo '</h3>
+            <span class="block justify-items-center w-[100%] h-[2px]  bg-gris"></span>
+            <p class="py-2 pb-2">';
+                the_field('datep');
+                echo '</p></div>
+            </div>
+            </a>';
+            }
         }
-    }
-    wp_reset_postdata();
-    ?>
+        wp_reset_postdata(); ?>
+    </div>
+
+    <div class="grid justify-items-start mx-[12rem] lg:mx-[8rem] md:mx-[2rem] sm:mx[1rem] py-[4rem]">
+        <h1 class="text-[5rem] grid text-transparent strokehomepage-motiondesign sm:text-[40px] md:text-[3rem]">Sky - Children of the Light</h1>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-2 mx-[8rem] lg:mx-[6rem] md:mx-[2rem] sm:mx[1rem] pb-[4rem]">
+        <!-- afficher fanarts de sky -->
+        <?php
+
+        $cat_taxonomie = 'projetsperso';
+        $args = array(
+            'showposts' => '6',
+            'tax_query' => array(
+                array(
+                    'taxonomy' => $cat_taxonomie,
+                    'field'    => 'slug',
+                    'terms'    => array('sky')
+
+                )
+            ),
+        );
+        $the_query = new WP_query($args);
+
+        if ($the_query->have_posts()) {
+            while ($the_query->have_posts()) {
+                $the_query->the_post();
+                echo '<a href="' . get_permalink() . '">
+            <div class="grid grid-cols-1 gap-2">';
+                the_post_thumbnail('large');
+                echo '<div class=""><h3>';
+                the_title();
+
+
+                echo '</h3>
+            <span class="block justify-items-center w-[100%] h-[2px]  bg-gris"></span>
+            <p class="py-2 pb-2">';
+                the_field('datep');
+
+                echo '</p></div>
+            </div>
+            </a>';
+            }
+        }
+        wp_reset_postdata(); ?>
+    </div>
+
+    <div class="grid justify-items-start mx-[12rem] lg:mx-[8rem] md:mx-[2rem] sm:mx[1rem] py-[4rem]">
+        <h1 class="text-[5rem] grid text-transparent strokehomepage-graphisme sm:text-[40px] md:text-[3rem]">Pokemon - fanarts</h1>
+    </div>
+
+    <div class="grid grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-2 mx-[8rem] lg:mx-[6rem] md:mx-[2rem] sm:mx[1rem] pb-[4rem]">
+        <!-- afficher Pokemon -->
+        <?php
+
+        $cat_taxonomie = 'projetsperso';
+        $args = array(
+            'showposts' => '6',
+            'tax_query' => array(
+                array(
+                    'taxonomy' => $cat_taxonomie,
+                    'field'    => 'slug',
+                    'terms'    => array('pokemon')
+
+                )
+            ),
+        );
+        $the_query = new WP_query($args);
+
+        if ($the_query->have_posts()) {
+            while ($the_query->have_posts()) {
+                $the_query->the_post();
+                echo '<a href="' . get_permalink() . '">
+            <div class="grid grid-cols-1 gap-2">';
+                the_post_thumbnail('large');
+                echo '<div class=""><h3>';
+                the_title();
+
+
+                echo '</h3>
+            <span class="block justify-items-center w-[100%] h-[2px]  bg-gris"></span>
+            <p class="py-2 pb-2">';
+                the_field('datep');
+                echo '</p></div>
+            </div>
+            </a>';
+            }
+        }
+        wp_reset_postdata(); ?>
+    </div>
 
 </div>
 

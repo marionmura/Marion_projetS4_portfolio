@@ -53,17 +53,17 @@ get_header(); ?>
 
         <div class="grid justify-items-start mx-[12rem] lg:mx-[8rem] md:mx-[2rem] sm:mx[1rem]">
             <h1 class="text-[5rem] text-transparent strokehomepage-motiondesign sm:text-[40px] md:text-[3rem]">Motion design</h1>
-            <span class="block justify-items-center w-[85%] lg:w-full h-[2px] mt-[-20px] md:mt-[-5px] bg-gris"></span>
+            <!-- <span class="block justify-items-center w-[85%] lg:w-full h-[2px] mt-[-20px] md:mt-[-5px] bg-gris"></span> -->
         </div>
 
         <div class="grid justify-items-start mx-[12rem] lg:mx-[8rem] md:mx-[2rem] sm:mx[1rem]">
             <h1 class="text-[5rem] grid text-transparent strokehomepage-webdesign sm:text-[40px] md:text-[3rem]">Web design</h1>
-            <span class="block justify-items-center w-[85%] lg:w-full  h-[2px] mt-[-20px] md:mt-[-5px] bg-gris"></span>
+            <!-- <span class="block justify-items-center w-[85%] lg:w-full  h-[2px] mt-[-20px] md:mt-[-5px] bg-gris"></span> -->
         </div>
 
         <div class="grid justify-items-start mx-[12rem] lg:mx-[8rem] md:mx-[2rem] sm:mx[1rem]">
             <h1 class="text-[5rem] grid text-transparent strokehomepage-graphisme sm:text-[40px] md:text-[3rem]">Graphisme</h1>
-            <span class="block justify-items-center w-[85%] lg:w-full h-[2px] mt-[-20px] md:mt-[-5px] bg-gris"></span>
+            <!-- <span class="block justify-items-center w-[85%] lg:w-full h-[2px] mt-[-20px] md:mt-[-5px] bg-gris"></span> -->
         </div>
 
 

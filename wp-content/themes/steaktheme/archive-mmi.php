@@ -53,54 +53,7 @@
 
                 echo '</h3>
             <span class="block justify-items-center w-[85%] lg:w-[100%] h-[2px]  bg-gris"></span>
-            <p>';
-                the_field('date_du_projet');
-                echo '</p><p>';
-                the_field('petit_resume');
-
-                echo '</p></div>
-            </div>
-            </a>';
-            }
-        }
-        wp_reset_postdata(); ?>
-    </div>
-    
-    <div class="grid justify-items-start mx-[12rem] lg:mx-[8rem] md:mx-[2rem] sm:mx[1rem] py-[4rem]">
-        <h1 class="text-[5rem] grid text-transparent strokehomepage-webdesign sm:text-[40px] md:text-[3rem]">Web design</h1>
-    </div>
-
-    <div class="grid grid-cols-2 md:grid-cols-1 gap-2 mx-[8rem] lg:mx-[6rem] md:mx-[2rem] sm:mx[1rem] pb-[4rem]">
-        <!-- afficher les articles sur en design -->
-        <?php
-
-        $cat_taxonomie = 'articlemmi';
-        $args = array(
-            'showposts' => '6',
-            'tax_query' => array(
-                array(
-                    'taxonomy' => $cat_taxonomie,
-                    'field'    => 'slug',
-                    'terms'    => array('design')
-
-                )
-            ),
-        );
-        $the_query = new WP_query($args);
-
-        if ($the_query->have_posts()) {
-            while ($the_query->have_posts()) {
-                $the_query->the_post();
-                echo '<a href="' . get_permalink() . '">
-            <div class="grid grid-cols-2 sm:grid-cols-1 gap-2">';
-                the_post_thumbnail('large');
-                echo '<div class=""><h3>';
-                the_title();
-
-
-                echo '</h3>
-            <span class="block justify-items-center w-[85%] lg:w-[100%] h-[2px]  bg-gris"></span>
-            <p>';
+            <p class="py-2 pb-2">';
                 the_field('date_du_projet');
                 echo '</p><p>';
                 the_field('petit_resume');
@@ -147,7 +100,7 @@
 
                 echo '</h3>
             <span class="block justify-items-center w-[85%] lg:w-[100%] h-[2px]  bg-gris"></span>
-            <p>';
+            <p class="py-2 pb-2">';
                 the_field('date_du_projet');
                 echo '</p><p>';
                 the_field('petit_resume');
@@ -160,6 +113,52 @@
         wp_reset_postdata(); ?>
     </div>
 
+    <div class="grid justify-items-start mx-[12rem] lg:mx-[8rem] md:mx-[2rem] sm:mx[1rem] py-[4rem]">
+        <h1 class="text-[5rem] grid text-transparent strokehomepage-webdesign sm:text-[40px] md:text-[3rem]">Web design</h1>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-1 gap-2 mx-[8rem] lg:mx-[6rem] md:mx-[2rem] sm:mx[1rem] pb-[4rem]">
+        <!-- afficher les articles sur en design -->
+        <?php
+
+        $cat_taxonomie = 'articlemmi';
+        $args = array(
+            'showposts' => '6',
+            'tax_query' => array(
+                array(
+                    'taxonomy' => $cat_taxonomie,
+                    'field'    => 'slug',
+                    'terms'    => array('design')
+
+                )
+            ),
+        );
+        $the_query = new WP_query($args);
+
+        if ($the_query->have_posts()) {
+            while ($the_query->have_posts()) {
+                $the_query->the_post();
+                echo '<a href="' . get_permalink() . '">
+            <div class="grid grid-cols-2 sm:grid-cols-1 gap-2">';
+                the_post_thumbnail('large');
+                echo '<div class=""><h3>';
+                the_title();
+
+
+                echo '</h3>
+            <span class="block justify-items-center w-[85%] lg:w-[100%] h-[2px]  bg-gris"></span>
+            <p class="py-2 pb-2">';
+                the_field('date_du_projet');
+                echo '</p><p>';
+                the_field('petit_resume');
+
+                echo '</p></div>
+            </div>
+            </a>';
+            }
+        }
+        wp_reset_postdata(); ?>
+    </div>
 
     <!-- <?php if (have_posts()) : ?>
     <?php while (have_posts()) :
