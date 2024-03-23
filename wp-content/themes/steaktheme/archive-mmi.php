@@ -16,33 +16,17 @@
     </div>
 </div>
 
+<!-- ancienne classe grille de 3 responsive class="grid grid-cols-3 md:grid-cols-1 sm:grid-cols-1  gap-0 m-0 p-0" -->
+<div class="">
 
-<div class="grid grid-cols-3 md:grid-cols-1 sm:grid-cols-1  gap-0 m-0 p-0">
-    <!-- <?php if (have_posts()) : ?>
-        <?php while (have_posts()) :
-                    the_post(); ?>
-            // à ajouter dans article et div plus haut border border-gray-300 pour voir la grid 
-            <article class=" ">
-                <a href="<?php the_permalink(); ?>">
-                    <?php the_post_thumbnail('large'); ?> </a>
-                <div class="">
-                    <h3 class="title">
-                        
-                            <?php the_title(); ?>
-                    </h3>
-                    <p class="description">voir le projet</p>
-                    
+    <div class="grid justify-items-start mx-[12rem] lg:mx-[8rem] md:mx-[2rem] sm:mx[1rem] py-4">
+        <h1 class="text-[5rem] text-transparent strokehomepage-motiondesign sm:text-[40px] md:text-[3rem]">Motion design</h1>
+        
+    </div>
 
-                </div> 
-            </article> // boucle pour récup tous les articles
-            // on va mettre en triant par type d'articles visuellement - tout design puis tout animation puis tout ce qui reste s'il y a d'autre cat
-        <?php endwhile; ?>
-    <?php endif; ?> -->
-
-
-
+<div class="grid grid-cols-2 gap-2 mx-[12rem] lg:mx-[8rem] md:mx-[2rem] sm:mx[1rem]">
     <!-- afficher les articles sur l'animation -->
-    <?php echo '<br/>';
+    <?php ;
 
     $cat_taxonomie = 'articlemmi';
     $args = array(
@@ -61,14 +45,21 @@
     if ($the_query->have_posts()) {
         while ($the_query->have_posts()) {
             $the_query->the_post();
-            echo '<a href="' . get_permalink() . '">';
-            the_post_thumbnail('large');
-            echo '</a>';
+            echo '<a href="' . get_permalink() . '"><div class="grid grid-cols-2 gap-2">';
+            the_post_thumbnail('medium');
+            the_title();
+            
+            echo '</div></a>';
         }
     }
-    wp_reset_postdata();
+    wp_reset_postdata(); ?>
+</div>
+    <div class="grid justify-items-start mx-[12rem] lg:mx-[8rem] md:mx-[2rem] sm:mx[1rem]">
+        <h1 class="text-[5rem] grid text-transparent strokehomepage-webdesign sm:text-[40px] md:text-[3rem]">Web design</h1>
+        <span class="block justify-items-center w-[85%] lg:w-full  h-[2px] mt-[-20px] md:mt-[-5px] bg-gris"></span>
+    </div>
 
-    // afficher les articles sur le design
+    <?php // afficher les articles sur le design
     $args2 = array(
         'showposts' => '6',
         'tax_query' => array(
@@ -94,6 +85,28 @@
     wp_reset_postdata();
     ?>
 
+
+
+    <!-- <?php if (have_posts()) : ?>
+    <?php while (have_posts()) :
+                    the_post(); ?>
+            // à ajouter dans article et div plus haut border border-gray-300 pour voir la grid 
+            <article class=" ">
+                <a href="<?php the_permalink(); ?>">
+                    <?php the_post_thumbnail('large'); ?> </a>
+                <div class="">
+                    <h3 class="title">
+                        
+                            <?php the_title(); ?>
+                    </h3>
+                    <p class="description">voir le projet</p>
+                    
+
+                </div> 
+            </article> // boucle pour récup tous les articles
+            // on va mettre en triant par type d'articles visuellement - tout design puis tout animation puis tout ce qui reste s'il y a d'autre cat
+        <?php endwhile; ?>
+    <?php endif; ?> -->
 </div>
 
 
