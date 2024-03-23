@@ -1,11 +1,11 @@
 /*
-Theme Name: Portfolio 2024 |v4
+Theme Name: Portfolio 2024 |v12
 Theme URI: //
 Author: Marion MURA
 Author URI: //
-Description: Le thème développé pour mon portfolio 2024
-Version: 0.4
-Tags: simple, facile, sans danger, base pour la suite
+Description: Le thème développé pour mon portfolio 2024 - maj 21h30 - 23-03-24
+Version: 1.2
+Tags: portfolio v12
 */
 
 /*
@@ -852,6 +852,10 @@ video {
   width: 120px;
 }
 
+.w-\[15px\] {
+  width: 15px;
+}
+
 .w-\[18rem\] {
   width: 18rem;
 }
@@ -911,18 +915,6 @@ video {
 .w-max {
   width: -moz-max-content;
   width: max-content;
-}
-
-.w-\[25rpx\] {
-  width: 25rpx;
-}
-
-.w-\[25px\] {
-  width: 25px;
-}
-
-.w-\[15px\] {
-  width: 15px;
 }
 
 .rotate-\[-90deg\] {
@@ -1152,6 +1144,10 @@ video {
   padding-top: 5rem;
 }
 
+.pt-6 {
+  padding-top: 1.5rem;
+}
+
 .pt-\[100px\] {
   padding-top: 100px;
 }
@@ -1166,14 +1162,6 @@ video {
 
 .pt-\[8rem\] {
   padding-top: 8rem;
-}
-
-.pt-4 {
-  padding-top: 1rem;
-}
-
-.pt-6 {
-  padding-top: 1.5rem;
 }
 
 .text-center {
