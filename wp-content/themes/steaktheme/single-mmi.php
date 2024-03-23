@@ -170,11 +170,11 @@
                         <div class="grid grid-cols-1 gap-[2rem] justify-items-center">
                             <?php the_field('p-h3creation'); ?>
                             <div class="relative">
+                            <?php $image4_id = get_field('img-h3creation'); ?>
                             <?php if ($image4_id): ?>
-                                <?php $image4_id = get_field('img-h3creation'); ?>
                                     <img class="w-[25rem]" src="<?php echo wp_get_attachment_url($image4_id); ?>" alt="img" />
                                 <?php endif; ?>
-                                <img class="w-[20rem] absolute z-[-1] left-[-10rem] sm:top-[5rem] top-[0rem]"
+                                <img class="w-[18rem] absolute z-[-1] left-[-10rem] sm:top-[5rem] top-[0rem]"
                                     src="<?php echo wp_get_attachment_url(18); ?>" alt="cercle vert" />
                             </div>
                         </div>
