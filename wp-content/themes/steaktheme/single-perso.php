@@ -28,8 +28,8 @@
             <h2 class="z-40 text-[2rem] pb-5 md:text-2xl sm:text-[2rem]">
                 <?php the_field('titre_galerie'); ?>
             </h2>
-            <!-- faut couper en deux le texte là -->
-            <p class="pb-5 grid grid-cols-2"><?php the_field('resume'); ?>
+            
+            <p class="pb-5 grid grid-cols-2 lg:grid-cols-1"><?php the_field('resume'); ?>
                     <p>
 
             <div class="z-40 mb-[2rem] grid grid-cols-1 justify-items-center content-between ">
