@@ -32,22 +32,22 @@
             </div>
 
             <!-- //résumé article -->
-            <h2 class="z-40 text-[2rem] pb-5 md:text-2xl sm:text-[2rem]">
+            <h2 class="z-40 text-[2rem] mt-[4rem] sm:mt-[2rem] pb-5 md:text-2xl sm:text-[2rem]">
                 <?php the_field('h1_article'); ?>
             </h2>
 
-            <div class="z-40 mb-[2rem] grid grid-cols-1 justify-items-center content-between ">
+            <div class="z-40 mb-[2rem] grid grid-cols-1 justify-items-center items-center content-between ">
 
-                <div class="grid grid-cols-2 md:grid-cols-1 gap-[2rem] sm:gap-[4rem]  mb-[4rem] items-start">
+                <div class="grid grid-cols-2 md:grid-cols-1 gap-[2rem] sm:gap-[4rem] mb-[4rem] items-center">
 
-                    <div class="">
+                    <div class="mx-4">
                         <?php the_field('p_resume'); ?>
                     </div>
-                    <div class="">
+                    <div class="grid grid-cols-1 justify-items-center">
                         <?php $image_id = get_field('logo_du_projet'); ?>
                         <!-- // Récupérer l'ID de l'image -->
                         <?php if ($image_id) : ?>
-                            <img class="w-[25rem]" src="<?php echo wp_get_attachment_url($image_id); ?>" alt="img" />
+                            <img class="w-[20rem] max-w-[25rem]" src="<?php echo wp_get_attachment_url($image_id); ?>" alt="img" />
                         <?php endif; ?>
                     </div>
                 </div>
