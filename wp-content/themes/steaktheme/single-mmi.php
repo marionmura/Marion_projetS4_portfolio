@@ -156,8 +156,8 @@
                             <?php if ($image3_id): ?>
                                 <img class="w-[25rem]" src="<?php echo wp_get_attachment_url($image3_id); ?>" alt="img" />
                             <?php endif; ?>
-                            <img class="w-[20rem] absolute z-[-1] left-[1rem] md:top-[12rem] sm:top-[8rem] top-[15rem]"
-                                src="<?php echo wp_get_attachment_url(19); ?>" alt="cercle rouge" />
+                            <!-- <img class="w-[20rem] absolute z-[-1] left-[1rem] md:top-[12rem] sm:top-[8rem] top-[15rem]"
+                                src="<?php echo wp_get_attachment_url(19); ?>" alt="cercle rouge" /> -->
                         </div>
                     </div>
                 </div>
@@ -174,8 +174,8 @@
                             <?php if ($image4_id): ?>
                                     <img class="w-[25rem]" src="<?php echo wp_get_attachment_url($image4_id); ?>" alt="img" />
                                 <?php endif; ?>
-                                <img class="w-[18rem] absolute z-[-1] left-[-10rem] sm:top-[5rem] top-[0rem]"
-                                    src="<?php echo wp_get_attachment_url(18); ?>" alt="cercle vert" />
+                                <!-- <img class="w-[18rem] absolute z-[-1] left-[-10rem] sm:top-[5rem] top-[0rem]"
+                                    src="<?php echo wp_get_attachment_url(18); ?>" alt="cercle vert" /> -->
                             </div>
                         </div>
                         <div class="grid grid-cols-1  justify-items-center">
