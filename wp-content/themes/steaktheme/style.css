@@ -1,11 +1,11 @@
 /*
-Theme Name: Portfolio 2024 |v6
+Theme Name: Portfolio 2024 |v4
 Theme URI: //
 Author: Marion MURA
 Author URI: //
 Description: Le thème développé pour mon portfolio 2024
-Version: 3.0
-Tags: portfolio 2024 mise à jour à 16h le 23/03/2024
+Version: 0.4
+Tags: simple, facile, sans danger, base pour la suite
 */
 
 /*
@@ -686,11 +686,6 @@ video {
   margin-bottom: 3rem;
 }
 
-.my-2 {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -857,16 +852,8 @@ video {
   width: 120px;
 }
 
-.w-\[150px\] {
-  width: 150px;
-}
-
 .w-\[18rem\] {
   width: 18rem;
-}
-
-.w-\[20px\] {
-  width: 20px;
 }
 
 .w-\[20rem\] {
@@ -931,10 +918,6 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.resize {
-  resize: both;
-}
-
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
@@ -957,10 +940,6 @@ video {
 
 .flex-row-reverse {
   flex-direction: row-reverse;
-}
-
-.flex-col {
-  flex-direction: column;
 }
 
 .flex-wrap {
@@ -1073,10 +1052,6 @@ video {
   padding: 0px;
 }
 
-.p-2 {
-  padding: 0.5rem;
-}
-
 .p-5 {
   padding: 1.25rem;
 }
@@ -1167,10 +1142,6 @@ video {
 
 .pt-\[100px\] {
   padding-top: 100px;
-}
-
-.pt-\[20px\] {
-  padding-top: 20px;
 }
 
 .pt-\[2rem\] {
@@ -1278,11 +1249,6 @@ video {
 .hover\:\!text-gris:hover {
   --tw-text-opacity: 1 !important;
   color: rgb(23 28 48 / var(--tw-text-opacity)) !important;
-}
-
-.focus\:outline-none:focus {
-  outline: 2px solid transparent;
-  outline-offset: 2px;
 }
 
 @media (max-width: 1023px) {
@@ -1403,6 +1369,11 @@ video {
     margin-right: 8vw;
   }
 
+  .md\:mx-\[4rem\] {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+
   .md\:mb-\[0\] {
     margin-bottom: 0;
   }
@@ -1499,10 +1470,6 @@ video {
     gap: 1rem;
   }
 
-  .md\:justify-self-end {
-    justify-self: end;
-  }
-
   .md\:px-3 {
     padding-left: 0.75rem;
     padding-right: 0.75rem;
@@ -1513,12 +1480,12 @@ video {
     padding-bottom: 2rem;
   }
 
-  .md\:pb-\[5rem\] {
-    padding-bottom: 5rem;
-  }
-
   .md\:pb-8 {
     padding-bottom: 2rem;
+  }
+
+  .md\:pb-\[5rem\] {
+    padding-bottom: 5rem;
   }
 
   .md\:text-2xl {
@@ -1652,10 +1619,6 @@ video {
 
   .sm\:gap-\[4rem\] {
     gap: 4rem;
-  }
-
-  .sm\:pb-8 {
-    padding-bottom: 2rem;
   }
 
   .sm\:pb-\[5rem\] {

@@ -34,14 +34,16 @@ get_header(); ?>
     </div>
 
     <div class="pt-[100px] b-0 w-[100%]">
-        <div class="arrow-down">
+        <a href="#div2">
+        <div class="arrow-down ">
             <img class="" src="<?php echo wp_get_attachment_url(28); ?>" alt="double arrow" />
         </div>
+        </a>
     </div>
 
 
     <div class="mx-4 pt-[8rem]">
-        <div class="grid justify-items-start mx-[12rem] lg:mx-[8rem] md:mx-[2rem] sm:mx[1rem]">
+        <div id="div2"  class="grid justify-items-start mx-[12rem] lg:mx-[8rem] md:mx-[2rem] sm:mx[1rem]">
         <a href="https://marionmura.fr/mmi/">
             <div class="grid grid-cols-2 gap-[20rem] lg:gap-[12rem] md:gap-[12rem] sm:gap-[2rem] items-baseline sm:justify-items-center">
                 <h1 class="text-[5rem] md:text-[3rem] sm:text-[40px]  justify-self-start">Design</h1>
@@ -51,7 +53,7 @@ get_header(); ?>
             <span class="block justify-items-center w-[85%] lg:w-[100%] h-[2px] mt-[-20px] md:mt-[-5px] bg-gris"></span>
         </div>
 
-        <div class="grid justify-items-start mx-[12rem] lg:mx-[8rem] md:mx-[2rem] sm:mx[1rem]">
+        <div  class="grid justify-items-start mx-[12rem] lg:mx-[8rem] md:mx-[2rem] sm:mx[1rem]">
             <h1 class="text-[5rem] text-transparent strokehomepage-motiondesign sm:text-[40px] md:text-[3rem]">Motion design</h1>
             <!-- <span class="block justify-items-center w-[85%] lg:w-full h-[2px] mt-[-20px] md:mt-[-5px] bg-gris"></span> -->
         </div>
