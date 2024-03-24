@@ -65,7 +65,7 @@
         <h1 class="text-[5rem] grid text-transparent strokehomepage-webdesign sm:text-[40px] md:text-[3rem]">BD</h1>
     </div>
 
-    <div class="grid grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-10 md:gap-8 mx-[8rem] lg:mx-[6rem] md:mx-[2rem] sm:mx[1rem] pb-[4rem]">
+    <div class="grid grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-2 md:gap-8 mx-[8rem] lg:mx-[6rem] md:mx-[2rem] sm:mx[1rem] pb-[4rem]">
         <!-- afficher process sur ma petite BD -->
         <?php
 
@@ -109,7 +109,7 @@
         <h1 class="text-[5rem] grid text-transparent strokehomepage-motiondesign sm:text-[40px] md:text-[3rem]">Sky - Children of the Light</h1>
     </div>
 
-    <div class="grid grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-10 md:gap-8 mx-[8rem] lg:mx-[6rem] md:mx-[2rem] sm:mx[1rem] pb-[4rem]">
+    <div class="grid grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-2 md:gap-8 mx-[8rem] lg:mx-[6rem] md:mx-[2rem] sm:mx[1rem] pb-[4rem]">
         <!-- afficher fanarts de sky -->
         <?php
 
@@ -154,7 +154,7 @@
         <h1 class="text-[5rem] grid text-transparent strokehomepage-graphisme sm:text-[40px] md:text-[3rem]">Pokemon </h1>
     </div>
 
-    <div class="grid grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-10 md:gap-8 mx-[8rem] lg:mx-[6rem] md:mx-[2rem] sm:mx[1rem] pb-[4rem]">
+    <div class="grid grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-2 md:gap-8 mx-[8rem] lg:mx-[6rem] md:mx-[2rem] sm:mx[1rem] pb-[4rem]">
         <!-- afficher Pokemon -->
         <?php
 
