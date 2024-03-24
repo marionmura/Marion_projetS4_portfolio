@@ -23,7 +23,7 @@
 
     </div>
 
-    <div class="grid grid-cols-2 md:grid-cols-1 gap-6 md:gap-8 mx-[8rem] lg:mx-[6rem] md:mx-[2rem] sm:mx[1rem] pb-[4rem]">
+    <div class="grid grid-cols-2 md:grid-cols-1 gap-10 md:gap-8 mx-[8rem] lg:mx-[6rem] md:mx-[2rem] sm:mx[1rem] pb-[4rem]">
         <!-- afficher les articles sur l'animation -->
         <?php
 
@@ -70,7 +70,7 @@
         <h1 class="text-[5rem] grid text-transparent strokehomepage-graphisme sm:text-[40px] md:text-[3rem]">Graphisme</h1>
     </div>
 
-    <div class="grid grid-cols-2 md:grid-cols-1 gap-6 md:gap-8 mx-[8rem] lg:mx-[6rem] md:mx-[2rem] sm:mx[1rem] pb-[4rem]">
+    <div class="grid grid-cols-2 md:grid-cols-1 gap-10 md:gap-8 mx-[8rem] lg:mx-[6rem] md:mx-[2rem] sm:mx[1rem] pb-[4rem]">
         <!-- afficher les articles en graphisme -->
         <?php
 
@@ -117,7 +117,7 @@
         <h1 class="text-[5rem] grid text-transparent strokehomepage-webdesign sm:text-[40px] md:text-[3rem]">Chartes graphiques</h1>
     </div>
 
-    <div class="grid grid-cols-2 md:grid-cols-1 gap-6 md:gap-8 mx-[8rem] lg:mx-[6rem] md:mx-[2rem] sm:mx[1rem] pb-[4rem]">
+    <div class="grid grid-cols-2 md:grid-cols-1 gap-10 md:gap-8 mx-[8rem] lg:mx-[6rem] md:mx-[2rem] sm:mx[1rem] pb-[4rem]">
         <!-- afficher les articles sur en design -->
         <?php
 
