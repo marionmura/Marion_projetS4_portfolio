@@ -1,11 +1,11 @@
 /*
-Theme Name: Portfolio 2024 |v14
+Theme Name: Portfolio 2024 |v15
 Theme URI: //
 Author: Marion MURA
 Author URI: //
-Description: Le thème développé pour mon portfolio 2024 - maj 23h55 - 23-03-24
-Version: 1.4
-Tags: portfolio v14
+Description: Le thème développé pour mon portfolio 2024 - maj 11h30 - 24-03-24
+Version: 1.5
+Tags: portfolio v15
 */
 
 /*
@@ -646,10 +646,6 @@ video {
   margin: 1.25rem;
 }
 
-.-m-\[4rem\] {
-  margin: -4rem;
-}
-
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
@@ -768,12 +764,12 @@ video {
   margin-top: 3rem;
 }
 
-.mt-\[6rem\] {
-  margin-top: 6rem;
-}
-
 .mt-\[4rem\] {
   margin-top: 4rem;
+}
+
+.mt-\[6rem\] {
+  margin-top: 6rem;
 }
 
 .block {
@@ -923,14 +919,6 @@ video {
 .w-max {
   width: -moz-max-content;
   width: max-content;
-}
-
-.w-\[10rem\] {
-  width: 10rem;
-}
-
-.w-\[15rem\] {
-  width: 15rem;
 }
 
 .max-w-\[25rem\] {
@@ -1498,6 +1486,10 @@ video {
     flex-wrap: wrap;
   }
 
+  .md\:gap-8 {
+    gap: 2rem;
+  }
+
   .md\:gap-\[12rem\] {
     gap: 12rem;
   }
@@ -1613,12 +1605,12 @@ video {
     margin-bottom: 0px;
   }
 
-  .sm\:mt-\[4rem\] {
-    margin-top: 4rem;
-  }
-
   .sm\:mt-\[2rem\] {
     margin-top: 2rem;
+  }
+
+  .sm\:mt-\[4rem\] {
+    margin-top: 4rem;
   }
 
   .sm\:grid {

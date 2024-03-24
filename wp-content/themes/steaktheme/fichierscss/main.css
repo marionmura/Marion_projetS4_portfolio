@@ -1,4 +1,9 @@
 /*MAIN*/
+html {
+    scroll-behavior: smooth;
+}
+
+
 .main{
     background-color: #F6F2EA;
  }
