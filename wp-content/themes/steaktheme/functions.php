@@ -32,15 +32,15 @@ function process_contact_form() {
 		$content = esc_textarea( stripslashes( $_POST['content'] ) );
 
         // Construisez le contenu de l'e-mail
-        $message="";
-	  	$message .= "\nEmail: $mail\n";
+        // $message="";
         $message = "De: $lastname $surname\n";
+	  	$message .= "\nEmail: $mail\n";
         $message .= "\nMessage:\n$content";
 	  	$message .= "\n\nMail envoyé automatiquement par le formulaire de contact du Portfolio de Marion MURA\n";
 	  	$message .= "https://marionmura.fr/";
 
         // Utilisez la fonction de courrier WordPress pour envoyer l'e-mail
-        wp_mail( 'marion.mura090@gmail.com', $object, $message );
+        wp_mail( 'marion.murapro@gmail.com', $object, $message );
 
         // Redirigez l'utilisateur après l'envoi du formulaire
         wp_redirect( home_url( '/contact/' ) );
