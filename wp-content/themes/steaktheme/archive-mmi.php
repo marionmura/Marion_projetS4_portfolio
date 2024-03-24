@@ -23,7 +23,7 @@
 
     </div>
 
-    <div class="grid grid-cols-2 md:grid-cols-1 gap-2 md:gap-8 mx-[8rem] lg:mx-[6rem] md:mx-[2rem] sm:mx[1rem] pb-[4rem]">
+    <div class="grid grid-cols-2 md:grid-cols-1 gap-6 md:gap-8 mx-[8rem] lg:mx-[6rem] md:mx-[2rem] sm:mx[1rem] pb-[4rem]">
         <!-- afficher les articles sur l'animation -->
         <?php
 
@@ -52,7 +52,7 @@
 
 
                 echo '</h3>
-            <span class="block justify-items-center w-[85%] lg:w-[100%] h-[2px]  bg-gris"></span>
+            <span class="block justify-items-center w-[100%] h-[2px]  bg-gris"></span>
             <p class="py-2 pb-2">';
                 the_field('date_du_projet');
                 echo '</p><p>';
@@ -70,7 +70,7 @@
         <h1 class="text-[5rem] grid text-transparent strokehomepage-graphisme sm:text-[40px] md:text-[3rem]">Graphisme</h1>
     </div>
 
-    <div class="grid grid-cols-2 md:grid-cols-1 gap-2 md:gap-8 mx-[8rem] lg:mx-[6rem] md:mx-[2rem] sm:mx[1rem] pb-[4rem]">
+    <div class="grid grid-cols-2 md:grid-cols-1 gap-6 md:gap-8 mx-[8rem] lg:mx-[6rem] md:mx-[2rem] sm:mx[1rem] pb-[4rem]">
         <!-- afficher les articles en graphisme -->
         <?php
 
@@ -99,7 +99,7 @@
 
 
                 echo '</h3>
-            <span class="block justify-items-center w-[85%] lg:w-[100%] h-[2px]  bg-gris"></span>
+            <span class="block justify-items-center w-[100%] h-[2px]  bg-gris"></span>
             <p class="py-2 pb-2">';
                 the_field('date_du_projet');
                 echo '</p><p>';
@@ -114,10 +114,10 @@
     </div>
 
     <div class="grid justify-items-start mx-[12rem] lg:mx-[8rem] md:mx-[2rem] sm:mx[1rem] py-[4rem]">
-        <h1 class="text-[5rem] grid text-transparent strokehomepage-webdesign sm:text-[40px] md:text-[3rem]">Web design</h1>
+        <h1 class="text-[5rem] grid text-transparent strokehomepage-webdesign sm:text-[40px] md:text-[3rem]">Chartes graphiques</h1>
     </div>
 
-    <div class="grid grid-cols-2 md:grid-cols-1 gap-2 md:gap-8 mx-[8rem] lg:mx-[6rem] md:mx-[2rem] sm:mx[1rem] pb-[4rem]">
+    <div class="grid grid-cols-2 md:grid-cols-1 gap-6 md:gap-8 mx-[8rem] lg:mx-[6rem] md:mx-[2rem] sm:mx[1rem] pb-[4rem]">
         <!-- afficher les articles sur en design -->
         <?php
 
@@ -146,7 +146,7 @@
 
 
                 echo '</h3>
-            <span class="block justify-items-center w-[85%] lg:w-[100%] h-[2px]  bg-gris"></span>
+            <span class="block justify-items-center w-[100%] h-[2px]  bg-gris"></span>
             <p class="py-2 pb-2">';
                 the_field('date_du_projet');
                 echo '</p><p>';
