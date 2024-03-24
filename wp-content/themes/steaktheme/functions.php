@@ -43,7 +43,7 @@ function process_contact_form() {
         wp_mail( 'marion.murapro@gmail.com', $object, $message );
 
         // Redirigez l'utilisateur après l'envoi du formulaire
-        wp_redirect( home_url( '/contact/' ) );
+        wp_redirect( home_url( '/confirmation/' ) );
         exit;
     } else {
         // Si le nonce n'est pas valide, faites quelque chose ici (par exemple, renvoyez une erreur).

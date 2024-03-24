@@ -11,7 +11,7 @@
                     <img class="absolute z-[-1] w-[240px] top-0 left-[180px] md:w-[200px] md:left-[200px] sm:w-[190px] sm:left-[190px] sm:top-[-70px] overflow-hidden" src="<?php echo wp_get_attachment_url(17); ?>" alt="cercle vert blur" />
                 </div>
 
-                <div class="z-40 grid grid-cols-2 lg:grid-cols-1 gap-[2rem] justify-items-center items-center pt-[50px] md:py-[2rem]">
+                <div class="z-40 grid grid-cols-1 lg:grid-cols-1 gap-[2rem] justify-items-center items-center pt-[50px] md:py-[2rem]">
                     <div>
                         <h1 class=" text-[4rem]  md:text-2xl sm:text-[2rem] pb-5">
                             <?php the_title(); ?>
