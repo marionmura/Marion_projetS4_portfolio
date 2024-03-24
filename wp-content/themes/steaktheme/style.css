@@ -1,11 +1,11 @@
 /*
-Theme Name: Portfolio 2024 |v17
+Theme Name: Portfolio 2024 |v18
 Theme URI: //
 Author: Marion MURA
 Author URI: //
-Description: Le thème développé pour mon portfolio 2024 - maj 13h30 - 24-03-24
-Version: 1.7
-Tags: portfolio v17
+Description: Le thème développé pour mon portfolio 2024 - maj 14h30 - 24-03-24
+Version: 1.8
+Tags: portfolio v18
 */
 
 /*
@@ -696,11 +696,6 @@ video {
   margin-bottom: 6rem;
 }
 
-.mx-\[10vw\] {
-  margin-left: 10vw;
-  margin-right: 10vw;
-}
-
 .mb-12 {
   margin-bottom: 3rem;
 }
@@ -1145,6 +1140,10 @@ video {
   padding-bottom: 4rem;
 }
 
+.pb-\[6rem\] {
+  padding-bottom: 6rem;
+}
+
 .pb-\[8rem\] {
   padding-bottom: 8rem;
 }
@@ -1179,10 +1178,6 @@ video {
 
 .pt-\[8rem\] {
   padding-top: 8rem;
-}
-
-.pb-\[6rem\] {
-  padding-bottom: 6rem;
 }
 
 .text-center {
@@ -1346,10 +1341,6 @@ video {
 
   .lg\:grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
-  }
-
-  .lg\:justify-items-center {
-    justify-items: center;
   }
 
   .lg\:gap-\[12rem\] {
